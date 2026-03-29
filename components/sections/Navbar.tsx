@@ -17,8 +17,8 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-brand-dark/95 backdrop-blur-sm py-4 shadow-lg' : 'bg-transparent py-6'}`}>
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-brand-dark/95 backdrop-blur-sm py-4 shadow-lg' : 'bg-transparent py-6'}`}>
+      <div className="max-w-7xl mx-auto px-8 md:px-6 flex justify-between items-center">
 
         {/* Left: Nav Links (desktop) + Hamburger (mobile) */}
         <div className="flex items-center">
@@ -38,9 +38,11 @@ export const Navbar = () => {
         </div>
 
         {/* Right: Get Started Button (both desktop and mobile) */}
-        <a href="https://wa.me/919051292950" target="_blank" rel="noopener noreferrer" className="bg-brand-orange hover:bg-brand-orange/90 text-white px-5 py-2 rounded-full text-sm font-bold transition-all hover:scale-105 active:scale-95">
-          Get Started
-        </a>
+        <div className="flex-shrink-0 pr-2 md:pr-0">
+          <a href="https://wa.me/919051292950" target="_blank" rel="noopener noreferrer" className="bg-brand-orange hover:bg-brand-orange/90 text-white px-4 md:px-6 py-2 rounded-full text-xs md:text-sm font-bold transition-all hover:scale-105 active:scale-95 whitespace-nowrap">
+            Get Started
+          </a>
+        </div>
       </div>
 
       {/* Mobile Menu */}
