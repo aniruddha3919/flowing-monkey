@@ -40,7 +40,7 @@ export const siteConfig = {
     { name: 'Steel Mace & Gada', iconName: 'dumbbell' },
     { name: 'Kettlebells', iconName: 'dumbbell' },
     { name: 'Persian Mills / Jodi', iconName: 'dumbbell' },
-    // { name: 'Indian Clubs', iconName: 'dumbbell' },
+    { name: 'Indian Clubs', iconName: 'dumbbell' },
     { name: 'Barbells & Dumbbells', iconName: 'dumbbell' }
   ],
 

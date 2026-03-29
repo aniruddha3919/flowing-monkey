@@ -35,14 +35,14 @@ export const HowWeTrain = () => {
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-orange/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3" />
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-orange/5 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4" />
 
-      {/* Section Top Image - Full Width */}
-      <div className="w-full relative z-10 mb-[-100px] md:mb-[-150px]">
+      {/* Section Top Image - Full Width (Mobile Only) */}
+      <div className="w-full relative z-10 mb-[-100px] md:hidden">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="relative w-full h-[400px] md:h-[600px] lg:h-[800px]"
+          className="relative w-full h-[400px]"
         >
           <Image
             src="/assets/new-diivder.png"
@@ -54,7 +54,7 @@ export const HowWeTrain = () => {
         </motion.div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-20">
+      <div className="max-w-7xl mx-auto px-6 relative z-20 md:pt-32">
 
 
 

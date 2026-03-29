@@ -17,8 +17,10 @@ export const ToolsGrid = () => {
       imagePath = '/assets/barbells-and-dumbbells-create-asthetic-product-pho.jpeg';
     } else if (tool.name.includes('Persian') || tool.name.includes('Mills')) {
       imagePath = '/assets/BMF_Persian_Meels_0788.jpg';
-    } else if (tool.name.includes('Mace') || tool.name.includes('Gada') || tool.name.includes('Clubs')) {
-      imagePath = '/assets/generate-these-product-image.jpeg'; // General image mapping for mace/clubs
+    } else if (tool.name.includes('Mace') || tool.name.includes('Gada')) {
+      imagePath = '/assets/generate-these-product-image.jpeg'; // General image mapping for mace/gada
+    } else if (tool.name.includes('Indian Clubs')) {
+      imagePath = '/assets/4_79f2c702-074b-4eca-82eb-fa7f56743ff7.webp';
     }
 
     return {
