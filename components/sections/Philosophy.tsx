@@ -22,7 +22,7 @@ export const Philosophy = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {siteConfig.philosophy.cards.map((card, i) => (
-            <motion.div 
+            <motion.div
               key={i}
               whileHover={{ y: -5 }}
               className="bg-brand-card p-8 rounded-3xl border border-white/5 flex items-center gap-4"

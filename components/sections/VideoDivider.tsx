@@ -3,10 +3,10 @@ import React from 'react';
 export function VideoDivider() {
   return (
     <section className="w-full relative overflow-hidden bg-brand-dark">
-      <video 
-        autoPlay 
-        loop 
-        muted 
+      <video
+        autoPlay
+        loop
+        muted
         playsInline
         className="w-full h-auto max-h-[80vh] object-cover opacity-90"
       >

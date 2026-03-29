@@ -46,7 +46,7 @@ export const Navbar = () => {
       {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
@@ -54,9 +54,9 @@ export const Navbar = () => {
           >
             <div className="flex flex-col p-6 gap-4">
               {siteConfig.navLinks.map((item) => (
-                <Link 
-                  key={item} 
-                  href={`#${item.toLowerCase().replace(' ', '-')}`} 
+                <Link
+                  key={item}
+                  href={`#${item.toLowerCase().replace(' ', '-')}`}
                   onClick={() => setIsOpen(false)}
                   className="text-lg font-medium"
                 >

@@ -57,9 +57,8 @@ export const Gallery = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className={`relative overflow-hidden rounded-2xl cursor-pointer group ${
-                  isLarge ? 'row-span-2 aspect-[3/5]' : 'aspect-square'
-                }`}
+                className={`relative overflow-hidden rounded-2xl cursor-pointer group ${isLarge ? 'row-span-2 aspect-[3/5]' : 'aspect-square'
+                  }`}
                 onClick={() => openLightbox(i)}
               >
                 <Image

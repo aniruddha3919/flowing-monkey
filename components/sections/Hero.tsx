@@ -15,7 +15,7 @@ export const Hero = () => {
       {/* Background with Overlay */}
       {/* Interactive Grid Background */}
       <div className="absolute inset-0 z-0 bg-[#0f0f12]">
-        <ShapeGrid 
+        <ShapeGrid
           direction="diagonal"
           borderColor="rgba(255, 255, 255, 0.05)"
           hoverFillColor="rgba(255, 102, 0, 0.15)"
@@ -28,7 +28,7 @@ export const Hero = () => {
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 w-full">
-          
+
           {/* Main Text Side */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -39,7 +39,7 @@ export const Hero = () => {
             <span className="text-brand-orange font-bold tracking-[0.2em] text-xs md:text-sm uppercase mb-6 block">
               {siteConfig.hero.badge}
             </span>
-            
+
             <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-6xl font-display font-bold leading-[1.1] md:leading-[0.9] mb-6 md:mb-12 max-w-4xl min-h-[80px] md:min-h-[150px]">
               <span className="block mb-2 md:mb-4">Flowing monkey fitness :</span>
               <TypeAnimation
@@ -67,23 +67,23 @@ export const Hero = () => {
           </motion.div>
 
           {/* Hero Image Side */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="w-full lg:w-1/2 order-first lg:order-last flex justify-center lg:justify-end translate-y-12 lg:translate-y-16 -mb-10 lg:-mb-16"
           >
             <div className="relative w-full max-w-[380px] lg:max-w-[700px] aspect-square pointer-events-none drop-shadow-[0_0_50px_rgba(255,102,0,0.15)] animate-pulse">
-              <Image 
-                src="/assets/hero-image.png" 
-                fill 
-                className="object-contain scale-[1.15] lg:scale-[1.3] origin-bottom" 
+              <Image
+                src="/assets/hero-image.png"
+                fill
+                className="object-contain scale-[1.15] lg:scale-[1.3] origin-bottom"
                 alt="Flowing Monkey Athlete"
-                priority 
+                priority
               />
             </div>
           </motion.div>
-          
+
         </div>
       </div>
     </section>

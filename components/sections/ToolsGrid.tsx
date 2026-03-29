@@ -9,7 +9,7 @@ export const ToolsGrid = () => {
   // User can upload real tool images into public/assets/tools/ and update these paths
   const galleryItems = siteConfig.tools.map((tool, i) => {
     let imagePath = `https://picsum.photos/seed/tool-${i}/800/600?grayscale`;
-    
+
     // Map tool names to the uploaded user images
     if (tool.name.includes('Kettlebells')) {
       imagePath = '/assets/kettlebells.jpeg';
@@ -43,17 +43,25 @@ export const ToolsGrid = () => {
           </p>
         </div>
       </div>
-      
+
       {/* Circular Gallery Container */}
       <div className="w-full relative z-10" style={{ height: '600px' }}>
-        <CircularGallery 
+        <CircularGallery
           items={galleryItems}
-          bend={3} 
-          textColor="#ffffff" 
-          borderRadius={0.05} 
+          bend={3}
+          textColor="#ffffff"
+          borderRadius={0.05}
           scrollSpeed={2}
           scrollEase={0.05}
         />
+      </div>
+      
+      {/* Training Approach Details */}
+      <div className="max-w-4xl mx-auto px-6 mt-12 relative z-10 text-left">
+        <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light">
+          The training approach integrates strength training with barbells, kettlebells, and dumbbells, alongside unconventional strength tools like mace, mugdar, gada, and Indian clubs. It further incorporates Animal Flow bodyweight movement training and corrective exercises for mobility, posture, and injury prevention.
+        </p>
+        
       </div>
     </section>
   );

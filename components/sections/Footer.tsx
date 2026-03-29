@@ -21,7 +21,7 @@ export const Footer = () => {
               {siteConfig.description}
             </p>
           </div>
-          
+
           <div>
             <h4 className="font-bold uppercase tracking-widest text-xs mb-6">Quick Links</h4>
             <ul className="space-y-4 text-sm text-white/60">
@@ -53,8 +53,11 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/30">
-          <p>© 2026 {siteConfig.name}. All rights reserved.</p>
+        <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/30 font-medium uppercase tracking-widest">
+          <div className="text-center md:text-left">
+            <p>© 2026 {siteConfig.name}. All rights reserved.</p>
+            <p className="mt-2 font-bold text-[10px] opacity-100 text-red-800">developed by moofy</p>
+          </div>
           <div className="flex gap-6">
             <Link href="#">Privacy Policy</Link>
             <Link href="#">Terms of Service</Link>

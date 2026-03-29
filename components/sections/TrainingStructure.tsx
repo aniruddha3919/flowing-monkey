@@ -7,11 +7,11 @@ import { User, Sparkles } from 'lucide-react';
 export const TrainingStructure = () => {
   const containerRef = React.useRef(null);
   const isInView = useInView(containerRef, { once: true, margin: "-100px" });
-  
+
   return (
     <section className="py-32 bg-brand-dark overflow-hidden relative" ref={containerRef}>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-orange/5 rounded-full blur-[120px] pointer-events-none" />
-      
+
       <div className="max-w-4xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <span className="text-brand-orange font-bold tracking-[0.2em] text-sm uppercase mb-4 block">
@@ -41,10 +41,10 @@ export const TrainingStructure = () => {
 
           {/* Chat Body */}
           <div className="p-6 md:p-8 space-y-8 flex flex-col justify-end min-h-[500px]">
-            
+
             {/* User Message */}
             {isInView && (
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, scale: 0.9, y: 20, originX: 1 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 0.4 }}
@@ -65,7 +65,7 @@ export const TrainingStructure = () => {
 
             {/* AI Response */}
             {isInView && (
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, scale: 0.9, y: 20, originX: 0 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
@@ -76,7 +76,7 @@ export const TrainingStructure = () => {
                     <Sparkles className="w-4 h-4 md:w-5 md:h-5" />
                   </div>
                   <div className="bg-white/5 border border-white/10 text-white/90 p-5 md:p-8 rounded-3xl rounded-tl-none shadow-xl space-y-4 max-h-[280px] md:max-h-none overflow-y-auto custom-scrollbar flex-1 min-w-0">
-                    <motion.p 
+                    <motion.p
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 1.2, duration: 0.5 }}
@@ -84,7 +84,7 @@ export const TrainingStructure = () => {
                     >
                       Each session at Flowing Monkey Fitness is <strong>60 minutes</strong> long.
                     </motion.p>
-                    <motion.p 
+                    <motion.p
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 2.0, duration: 0.5 }}
@@ -92,7 +92,7 @@ export const TrainingStructure = () => {
                     >
                       Clients can choose between <strong>one-on-one personal training</strong> sessions or <strong>small group training</strong> sessions depending on their preference and goals.
                     </motion.p>
-                    <motion.p 
+                    <motion.p
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 2.8, duration: 0.5 }}
@@ -100,7 +100,7 @@ export const TrainingStructure = () => {
                     >
                       The standard training structure is <strong>3 sessions per week</strong>, which means <strong>12 sessions per month</strong>. If a client wants to train more frequently, additional sessions can also be arranged.
                     </motion.p>
-                    <motion.p 
+                    <motion.p
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 3.6, duration: 0.5 }}
@@ -113,7 +113,7 @@ export const TrainingStructure = () => {
               </motion.div>
             )}
           </div>
-          
+
           {/* Input Area (Mock) */}
           <div className="p-4 bg-white/5 border-t border-white/5">
             <div className="bg-black/50 border border-white/10 rounded-full py-3 px-6 flex items-center justify-between text-white/30 text-sm">

@@ -16,9 +16,9 @@ export const WhoIsThisFor = () => {
   return (
     <section className="py-32 bg-brand-dark overflow-hidden relative">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-orange/5 rounded-full blur-[100px] pointer-events-none" />
-      
+
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -46,7 +46,7 @@ export const WhoIsThisFor = () => {
               className="bg-brand-card/50 backdrop-blur-sm p-8 md:p-10 rounded-3xl border border-white/5 hover:border-brand-orange/40 transition-all duration-300 group relative overflow-hidden flex flex-col justify-center min-h-[250px]"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-brand-orange/5 rounded-full blur-[40px] group-hover:bg-brand-orange/20 transition-colors pointer-events-none" />
-              
+
               <div className="text-brand-orange font-bold tracking-[0.3em] text-sm mb-4">0{i + 1}</div>
               <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4 group-hover:text-brand-orange transition-colors">
                 {tag}

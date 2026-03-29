@@ -15,7 +15,7 @@ export const FAQ = () => {
         <div className="space-y-4">
           {siteConfig.faqs.map((faq, i) => (
             <div key={i} className="bg-brand-card rounded-2xl border border-white/5 overflow-hidden">
-              <button 
+              <button
                 className="w-full p-6 text-left flex justify-between items-center font-bold text-lg"
                 onClick={() => setOpenIndex(openIndex === i ? -1 : i)}
               >
@@ -24,7 +24,7 @@ export const FAQ = () => {
               </button>
               <AnimatePresence>
                 {openIndex === i && (
-                  <motion.div 
+                  <motion.div
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: 'auto', opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}

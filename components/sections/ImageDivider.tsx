@@ -6,14 +6,14 @@ interface ImageDividerProps {
   alt?: string;
 }
 
-export function ImageDivider({ 
-  src = "/assets/divider-image.png", 
-  alt = "Divider Image" 
+export function ImageDivider({
+  src = "/assets/divider-image.png",
+  alt = "Divider Image"
 }: ImageDividerProps) {
   return (
     <section className="w-full bg-brand-dark md:hidden">
-      <Image 
-        src={src} 
+      <Image
+        src={src}
         alt={alt}
         width={1200}
         height={800}

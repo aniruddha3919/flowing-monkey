@@ -31,6 +31,17 @@ export const Comparison = () => {
             </ul>
           </div>
         </div>
+        <div className="mt-20 max-w-4xl mx-auto space-y-8 text-center md:text-left">
+          <p className="text-lg md:text-xl text-white/70 leading-relaxed italic border-l-4 border-white/10 pl-6">
+            Traditional gyms often focus mainly on machines and isolated muscle training. While this can build muscle, it may not always improve overall movement quality or functional strength.
+          </p>
+          <p className="text-xl md:text-2xl font-display font-medium text-white leading-relaxed">
+            <span className="text-brand-orange font-bold">Flowing Monkey Fitness</span> focuses on training the body as a complete system. The goal is to improve strength, mobility, coordination, and joint health so that clients can <span className="text-brand-orange italic underline decoration-brand-orange/30 underline-offset-8">move better</span> in daily life and physical activities.
+          </p>
+          <p className="text-lg md:text-xl text-white/70 leading-relaxed font-light">
+            This approach also reduces the risk of injuries and builds more practical, real-world strength.
+          </p>
+        </div>
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-import type {Metadata} from 'next';
+import type { Metadata } from 'next';
 import { Inter, Space_Grotesk } from 'next/font/google';
 import './globals.css';
 
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: 'Where Strength Meets Movement. Unconventional training in Kolkata.',
 };
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} dark`}>
       <body className="bg-[#0f0a07] text-[#e4e3e0] antialiased" suppressHydrationWarning>

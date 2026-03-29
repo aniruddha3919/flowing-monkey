@@ -35,12 +35,12 @@ export const HowWeTrain = () => {
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-orange/5 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        
-        
+
+
 
         {/* Integration Points Grid */}
         <div className="mb-24">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -49,10 +49,10 @@ export const HowWeTrain = () => {
           >
             Our Training Approach :
           </motion.h2>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {integrationPoints.map((point, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -73,7 +73,7 @@ export const HowWeTrain = () => {
         </div>
 
         {/* Conclusion / Programs Customization */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}

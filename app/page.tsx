@@ -23,7 +23,7 @@ export default function LandingPage() {
       <Navbar />
       <Hero />
       <Philosophy />
-      <ImageDivider src="/assets/ChatGPT Image Mar 28, 2026, 06_17_05 PM.png" />
+      
       <Founder />
       <ToolsGrid />
       
@@ -36,7 +36,8 @@ export default function LandingPage() {
       <TrainingStructure />
       <FAQ />
       <Gallery />
-      <ImageDivider src="/assets/ChatGPT Image Mar 28, 2026, 03_29_43 PM.png" />
+      {/* <ImageDivider src="/assets/ChatGPT Image Mar 28, 2026, 03_29_43 PM.png" /> */}
+      <ImageDivider src="/assets/ChatGPT Image Mar 28, 2026, 06_17_05 PM.png" />
       {/* <CTA /> */}
       <Footer />
     </main>
