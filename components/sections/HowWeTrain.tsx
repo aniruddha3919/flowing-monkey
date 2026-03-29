@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'motion/react';
 import { getIconComponent } from '@/config/site';
 
@@ -29,26 +30,75 @@ const integrationPoints = [
 
 export const HowWeTrain = () => {
   return (
-    <section className="py-32 bg-brand-dark relative overflow-hidden">
+    <section className="pt-0 pb-32 bg-brand-dark relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-orange/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3" />
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-orange/5 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4" />
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      {/* Section Top Image - Full Width */}
+      <div className="w-full relative z-10 mb-[-100px] md:mb-[-150px]">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          className="relative w-full h-[400px] md:h-[600px] lg:h-[800px]"
+        >
+          <Image
+            src="/assets/new-diivder.png"
+            alt="Flowing Monkey Centerpiece"
+            fill
+            className="object-contain"
+            priority
+          />
+        </motion.div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 relative z-20">
 
 
 
-        {/* Integration Points Grid */}
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-5xl md:text-7xl font-display font-bold text-left mb-16 text-white"
+        >
+          Our Training Approach :
+        </motion.h2>
+
+        {/* YouTube Shorts Grid */}
         <div className="mb-24">
-          <motion.h2
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-5xl md:text-7xl font-display font-bold text-left mb-16 text-white"
+            className="grid grid-cols-1 md:grid-cols-3 gap-6"
           >
-            Our Training Approach :
-          </motion.h2>
+            {[
+              "qXze9g__8B8",
+              "3_ZrSSYSB20",
+              "QCHYELJJ_hM"
+            ].map((id, index) => (
+              <div 
+                key={id}
+                className="relative aspect-[9/16] w-full rounded-2xl overflow-hidden border border-white/10 bg-brand-dark/50"
+              >
+                <iframe
+                  src={`https://www.youtube.com/embed/${id}?autoplay=1&mute=1&loop=1&playlist=${id}&controls=0&modestbranding=1&rel=0&iv_load_policy=3&playsinline=1`}
+                  title={`Training video ${index + 1}`}
+                  className="absolute inset-0 w-full h-full pointer-events-none"
+                  allow="autoplay; encrypted-media; picture-in-picture"
+                  frameBorder="0"
+                />
+              </div>
+            ))}
+          </motion.div>
+        </div>
+
+        <div className="mb-24">
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {integrationPoints.map((point, i) => (
