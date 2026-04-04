@@ -14,10 +14,10 @@ export const TrainingStructure = () => {
 
       <div className="max-w-4xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <span className="text-brand-orange font-bold tracking-[0.2em] text-sm uppercase mb-4 block">
+          <span className="text-brand-orange/80 font-bold tracking-[0.2em] text-sm uppercase mb-4 block">
             The Protocol
           </span>
-          <h2 className="text-5xl md:text-6xl font-display font-bold text-white">
+          <h2 className="text-5xl md:text-6xl font-display font-bold text-white/80">
             Training Structure
           </h2>
         </div>
@@ -27,12 +27,12 @@ export const TrainingStructure = () => {
           {/* Chat Header */}
           <div className="bg-white/5 border-b border-white/5 p-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-brand-orange/20 flex items-center justify-center text-brand-orange">
+              <div className="w-10 h-10 rounded-xl bg-brand-orange/20 flex items-center justify-center text-brand-orange/80">
                 <Sparkles size={20} />
               </div>
               <div>
-                <h3 className="text-white font-bold text-sm">Monkey AI</h3>
-                <p className="text-brand-orange text-xs flex items-center gap-1">
+                <h3 className="text-white/80 font-bold text-sm">Monkey AI</h3>
+                <p className="text-brand-orange/80 text-xs flex items-center gap-1">
                   <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse" /> Online
                 </p>
               </div>
@@ -51,10 +51,10 @@ export const TrainingStructure = () => {
                 className="flex justify-end"
               >
                 <div className="flex gap-4 max-w-[85%] md:max-w-[70%] flex-row-reverse">
-                  <div className="w-10 h-10 shrink-0 rounded-xl bg-white/10 flex items-center justify-center text-white border border-white/5">
+                  <div className="w-10 h-10 shrink-0 rounded-xl bg-white/10 flex items-center justify-center text-white/80 border border-white/5">
                     <User size={20} />
                   </div>
-                  <div className="bg-brand-orange text-white p-5 rounded-3xl rounded-tr-none shadow-lg">
+                  <div className="bg-brand-orange text-white/80 p-5 rounded-3xl rounded-tr-none shadow-lg">
                     <p className="text-sm md:text-base leading-relaxed font-medium">
                       Tell me about the training structure.
                     </p>
@@ -72,7 +72,7 @@ export const TrainingStructure = () => {
                 className="flex justify-start"
               >
                 <div className="flex gap-3 md:gap-4 max-w-[98%] md:max-w-[85%]">
-                  <div className="w-8 h-8 md:w-10 md:h-10 shrink-0 rounded-xl bg-brand-orange/20 flex items-center justify-center text-brand-orange border border-brand-orange/20">
+                  <div className="w-8 h-8 md:w-10 md:h-10 shrink-0 rounded-xl bg-brand-orange/20 flex items-center justify-center text-brand-orange/80 border border-brand-orange/20">
                     <Sparkles className="w-4 h-4 md:w-5 md:h-5" />
                   </div>
                   <div className="bg-white/5 border border-white/10 text-white/90 p-5 md:p-8 rounded-3xl rounded-tl-none shadow-xl space-y-4 max-h-[280px] md:max-h-none overflow-y-auto custom-scrollbar flex-1 min-w-0">

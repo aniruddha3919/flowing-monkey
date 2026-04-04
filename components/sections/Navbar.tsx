@@ -23,14 +23,14 @@ export const Navbar = () => {
         {/* Left: Nav Links (desktop) + Hamburger (mobile) */}
         <div className="flex items-center">
           {/* Mobile hamburger — left */}
-          <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
+          <button className="md:hidden text-white/80" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X /> : <Menu />}
           </button>
 
           {/* Desktop nav links */}
           <div className="hidden md:flex items-center gap-8">
             {siteConfig.navLinks.map((item) => (
-              <Link key={item} href={`#${item.toLowerCase().replace(' ', '-')}`} className="text-sm font-medium hover:text-brand-orange transition-colors">
+              <Link key={item} href={`#${item.toLowerCase().replace(' ', '-')}`} className="text-lg font-display tracking-widest uppercase hover:text-brand-orange/80 transition-colors">
                 {item}
               </Link>
             ))}
@@ -39,8 +39,13 @@ export const Navbar = () => {
 
         {/* Right: Get Started Button (both desktop and mobile) */}
         <div className="flex-shrink-0 pr-2 md:pr-0">
-          <a href="https://wa.me/919051292950" target="_blank" rel="noopener noreferrer" className="bg-brand-orange hover:bg-brand-orange/90 text-white px-4 md:px-6 py-2 rounded-full text-xs md:text-sm font-bold transition-all hover:scale-105 active:scale-95 whitespace-nowrap">
-            Get Started
+          <a 
+            href="https://wa.me/919051292950" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="bg-brand-red hover:bg-brand-red/90 text-white/80 px-5 md:px-7 py-2.5 rounded-none font-dm text-xs md:text-sm font-bold tracking-[0.1em] uppercase transition-all whitespace-nowrap"
+          >
+            BOOK A SESSION
           </a>
         </div>
       </div>
@@ -60,13 +65,18 @@ export const Navbar = () => {
                   key={item}
                   href={`#${item.toLowerCase().replace(' ', '-')}`}
                   onClick={() => setIsOpen(false)}
-                  className="text-lg font-medium"
+                  className="text-2xl font-display tracking-widest uppercase"
                 >
                   {item}
                 </Link>
               ))}
-              <a href="https://wa.me/919051292950" target="_blank" rel="noopener noreferrer" className="bg-brand-orange text-white py-3 rounded-xl font-bold mt-2 text-center block">
-                Get Started
+              <a 
+                href="https://wa.me/919051292950" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-brand-red text-white/80 py-4 rounded-none font-dm font-bold tracking-[0.1em] uppercase text-center block"
+              >
+                BOOK A SESSION
               </a>
             </div>
           </motion.div>

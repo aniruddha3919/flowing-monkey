@@ -23,7 +23,7 @@ export const Gallery = () => {
   const goPrev = () => setSelectedIndex((prev) => (prev !== null ? (prev - 1 + galleryImages.length) % galleryImages.length : null));
 
   return (
-    <section id="gallery" className="py-24 bg-brand-dark overflow-hidden">
+    <section id="gallery" className="pt-12 pb-24 bg-brand-dark overflow-hidden mt-5">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Section Header */}
@@ -34,10 +34,10 @@ export const Gallery = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-brand-orange font-bold tracking-[0.2em] text-sm uppercase mb-4 block">
+          <span className="text-brand-orange/80 font-bold tracking-[0.2em] text-sm uppercase mb-4 block">
             Gallery
           </span>
-          <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-6xl font-display font-bold text-white/80 mb-4">
             Training in Action
           </h2>
           <p className="text-white/50 max-w-2xl mx-auto text-lg">
@@ -71,7 +71,7 @@ export const Gallery = () => {
                 {/* Overlay on hover */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                  <p className="text-white text-sm font-medium">{img.alt}</p>
+                  <p className="text-white/80 text-sm font-medium">{img.alt}</p>
                 </div>
                 {/* Orange corner accent */}
                 <div className="absolute top-3 right-3 w-3 h-3 rounded-full bg-brand-orange opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-[0_0_10px_rgba(255,102,0,0.6)]" />
@@ -94,7 +94,7 @@ export const Gallery = () => {
             {/* Close button */}
             <button
               onClick={closeLightbox}
-              className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors z-10"
+              className="absolute top-6 right-6 text-white/70 hover:text-white/80 transition-colors z-10"
             >
               <X className="w-8 h-8" />
             </button>
@@ -102,7 +102,7 @@ export const Gallery = () => {
             {/* Prev button */}
             <button
               onClick={(e) => { e.stopPropagation(); goPrev(); }}
-              className="absolute left-4 md:left-8 text-white/50 hover:text-white transition-colors z-10 bg-white/10 hover:bg-white/20 rounded-full p-2"
+              className="absolute left-4 md:left-8 text-white/50 hover:text-white/80 transition-colors z-10 bg-white/10 hover:bg-white/20 rounded-full p-2"
             >
               <ChevronLeft className="w-8 h-8" />
             </button>
@@ -129,7 +129,7 @@ export const Gallery = () => {
             {/* Next button */}
             <button
               onClick={(e) => { e.stopPropagation(); goNext(); }}
-              className="absolute right-4 md:right-8 text-white/50 hover:text-white transition-colors z-10 bg-white/10 hover:bg-white/20 rounded-full p-2"
+              className="absolute right-4 md:right-8 text-white/50 hover:text-white/80 transition-colors z-10 bg-white/10 hover:bg-white/20 rounded-full p-2"
             >
               <ChevronRight className="w-8 h-8" />
             </button>

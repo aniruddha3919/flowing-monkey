@@ -3,6 +3,8 @@
 @theme {
   --font-sans: var(--font-sans);
   --font-display: var(--font-display);
+  --font-dm: var(--font-dm-sans);
+  --color-brand-red: #B91C1C;
   --color-brand-orange: #DC2626;
   --color-brand-dark: #0f0a07;
   --color-brand-card: #1c1612;

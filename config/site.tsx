@@ -15,10 +15,10 @@ export const siteConfig = {
     instagram: "https://www.instagram.com/flowingmonkeyfitness/",
     
   },
-  navLinks: ['Home', 'Training Arsenal', 'Methodology', 'Meet Coach'],
+  navLinks: ['Home', 'Training Arsenal', 'Meet Coach'],
   
   hero: {
-    badge: "Unconventional Training",
+    badge: "Movement · Strength · Freedom",
     titleLine1: "Where Strength",
     titleLine2: "Meets Movement",
     description: "Master the art of mace, gada, and animal flow. Unleash your primal potential with India's most unique fitness community."

@@ -14,7 +14,7 @@ const descriptions: Record<string, string> = {
 
 export const WhoIsThisFor = () => {
   return (
-    <section className="py-32 bg-brand-dark overflow-hidden relative">
+    <section className="pt-20 pb-32 bg-brand-dark overflow-hidden relative">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-orange/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -24,36 +24,38 @@ export const WhoIsThisFor = () => {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <span className="text-brand-orange font-bold tracking-[0.2em] text-sm uppercase mb-4 block">
+          <span className="text-brand-orange/80 font-bold tracking-[0.2em] text-sm uppercase mb-4 block">
             Who Is This For?
           </span>
-          <h2 className="text-5xl md:text-7xl font-display font-bold mb-6 text-white">
-            Designed For Every Body
+          <h2 className="tracking-[0.1em] text-5xl md:text-7xl font-display font-bold mb-6 text-white/80">
+            Designed For <br/> Every Body
           </h2>
           <p className="text-white/50 max-w-2xl mx-auto text-lg leading-relaxed">
             Whether you are just starting your fitness journey or looking to take your athletic performance to the next level.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="flex flex-col max-w-4xl mx-auto border-t border-white/5">
           {siteConfig.whoIsThisFor.map((tag, i) => (
             <motion.div
               key={tag}
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="bg-brand-card/50 backdrop-blur-sm p-8 md:p-10 rounded-3xl border border-white/5 hover:border-brand-orange/40 transition-all duration-300 group relative overflow-hidden flex flex-col justify-center min-h-[250px]"
+              className="group flex items-start gap-6 py-8 md:py-12 border-b border-white/5 transition-colors hover:bg-white/[0.02]"
             >
-              <div className="absolute top-0 right-0 w-32 h-32 bg-brand-orange/5 rounded-full blur-[40px] group-hover:bg-brand-orange/20 transition-colors pointer-events-none" />
-
-              <div className="text-brand-orange font-bold tracking-[0.3em] text-sm mb-4">0{i + 1}</div>
-              <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4 group-hover:text-brand-orange transition-colors">
-                {tag}
-              </h3>
-              <p className="text-white/60 leading-relaxed font-light">
-                {descriptions[tag] || 'Customized programming to help you reach your maximum potential.'}
-              </p>
+              {/* Red Square Bullet */}
+              <div className="w-1.5 h-1.5 bg-brand-red shrink-0 mt-2.5" />
+              
+              <div className="flex-1">
+                <h3 className="text-white/80 font-display font-bold uppercase tracking-widest text-xl mb-4 group-hover:text-brand-orange/80 transition-colors">
+                  {tag}
+                </h3>
+                <p className="text-white/60 text-lg leading-relaxed font-light">
+                  {descriptions[tag] || 'Customized programming to help you reach your maximum potential.'}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>

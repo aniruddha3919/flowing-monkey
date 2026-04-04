@@ -30,7 +30,7 @@ const integrationPoints = [
 
 export const HowWeTrain = () => {
   return (
-    <section className="pt-0 pb-32 bg-brand-dark relative overflow-hidden">
+    <section className="pt-0 pb-0 bg-brand-dark relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-orange/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3" />
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-orange/5 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4" />
@@ -45,7 +45,7 @@ export const HowWeTrain = () => {
           className="relative w-full h-[400px]"
         >
           <Image
-            src="/assets/new-diivder.png"
+            src="/assets/our-training.png"
             alt="Flowing Monkey Centerpiece"
             fill
             className="object-contain"
@@ -63,7 +63,7 @@ export const HowWeTrain = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-5xl md:text-7xl font-display font-bold text-left mb-16 text-white"
+          className="text-5xl md:text-7xl font-display font-bold text-left mb-16 text-white/80 opacity-80"
         >
           Our Training Approach :
         </motion.h2>
@@ -96,46 +96,38 @@ export const HowWeTrain = () => {
               </div>
             ))}
           </motion.div>
+
+          {/* Founder Quote */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-4xl mx-auto flex flex-col items-center mt-12 mb-0 px-4 md:px-12"
+          >
+            <div className="relative text-center">
+              <span className="absolute -top-4 -left-2 md:-left-8 text-5xl md:text-6xl text-brand-red/80 font-display leading-none select-none opacity-80">
+                “
+              </span>
+              <p className=" font-dm opacity-80 text-left text-xl md:text-[22px] text-white/80 leading-relaxed mb-8">
+                Traditional gyms focus on machines and isolated muscle training. At FMF, we focus on how the body moves as a whole — building practical, real-world strength that reduces injury risk and makes life better.
+              </p>
+            </div>
+            
+            <div className="text-right flex flex-col items-center gap-2 mt-2">
+              <span className="text-white/80 font-bold tracking-widest font-display uppercase opacity-80">
+                – MADHAV HALDER
+              </span>
+              <span className="text-brand-red/80 text-xs font-bold tracking-[0.3em] uppercase opacity-80">
+                Founder
+              </span>
+            </div>
+          </motion.div>
         </div>
 
-        <div className="mb-24">
+        
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {integrationPoints.map((point, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.15 }}
-                className="bg-brand-card/50 backdrop-blur-sm p-8 rounded-3xl border border-white/5 hover:border-brand-orange/30 transition-all duration-300 group"
-              >
-                <div className="w-16 h-16 bg-brand-dark rounded-xl flex items-center justify-center mb-6 border border-white/5 group-hover:scale-110 transition-transform duration-300 text-brand-orange shadow-inner">
-                  {getIconComponent(point.icon, { size: 28 })}
-                </div>
-                <h4 className="text-xl font-bold mb-4 text-white group-hover:text-brand-orange transition-colors">{point.title}</h4>
-                <p className="text-white/60 leading-relaxed text-sm">
-                  {point.desc}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-
-        {/* Conclusion / Programs Customization */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="bg-gradient-to-r from-brand-orange/30 via-brand-orange/10 to-transparent p-[1px] rounded-3xl max-w-4xl mx-auto shadow-2xl"
-        >
-          <div className="bg-brand-dark/95 backdrop-blur-xl rounded-[23px] p-8 md:p-12 text-center border border-white/5 shadow-inner">
-            <p className="text-2xl md:text-3xl font-display font-medium text-white leading-relaxed">
-              Programs are <span className="text-brand-orange italic">customized</span> according to each client&apos;s goals, movement limitations, and fitness level.
-            </p>
-          </div>
-        </motion.div>
+        
 
       </div>
     </section>

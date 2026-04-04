@@ -13,9 +13,9 @@ export const Footer = () => {
           <div className="col-span-1 md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-6">
               <div className="bg-brand-orange p-1.5 rounded-lg">
-                <Dumbbell className="w-6 h-6 text-white" />
+                <Dumbbell className="w-6 h-6 text-white/80" />
               </div>
-              <span className="text-xl font-display font-bold tracking-tight">{siteConfig.name}</span>
+              <span className="tracking-[0.1em] text-xl font-display font-bold">{siteConfig.name}</span>
             </Link>
             <p className="text-white/50 text-sm leading-relaxed">
               {siteConfig.description}
@@ -27,7 +27,7 @@ export const Footer = () => {
             <ul className="space-y-4 text-sm text-white/60">
               {siteConfig.navLinks.map((link) => (
                 <li key={link}>
-                  <Link href={`#${link.toLowerCase().replace(' ', '-')}`} className="hover:text-brand-orange transition-colors">
+                  <Link href={`#${link.toLowerCase().replace(' ', '-')}`} className="hover:text-brand-orange/80 transition-colors">
                     {link}
                   </Link>
                 </li>
@@ -35,14 +35,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-bold uppercase tracking-widest text-xs mb-6">Contact</h4>
-            <ul className="space-y-4 text-sm text-white/60">
-              <li className="flex items-center gap-3"><Phone className="w-4 h-4 text-brand-orange flex-shrink-0" /> {siteConfig.contact.phone}</li>
-              {/* <li className="flex items-center gap-3"><Mail className="w-4 h-4 text-brand-orange flex-shrink-0" /> {siteConfig.contact.email}</li> */}
-              <li className="flex items-center gap-3"><MapPin className="w-4 h-4 text-brand-orange flex-shrink-0" /> {siteConfig.contact.address}</li>
-            </ul>
-          </div>
+          
 
           <div>
             <h4 className="font-bold uppercase tracking-widest text-xs mb-6">Follow Us</h4>

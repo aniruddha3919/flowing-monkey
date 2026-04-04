@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Hero } from '@/components/sections/Hero';
-import { Philosophy } from '@/components/sections/Philosophy';
+import { Marquee } from '@/components/sections/Marquee';
 import { ToolsGrid } from '@/components/sections/ToolsGrid';
 import { Founder } from '@/components/sections/Founder';
 import { HowWeTrain } from '@/components/sections/HowWeTrain';
@@ -11,9 +11,10 @@ import { Difference } from '@/components/sections/Difference';
 import { ImageDivider } from '@/components/sections/ImageDivider';
 import { Comparison } from '@/components/sections/Comparison';
 import { WhoIsThisFor } from '@/components/sections/WhoIsThisFor';
-import { TrainingStructure } from '@/components/sections/TrainingStructure';
+import { Reviews } from '@/components/sections/Reviews';
 import { FAQ } from '@/components/sections/FAQ';
 import { Gallery } from '@/components/sections/Gallery';
+import { BookSession } from '@/components/sections/BookSession';
 import { CTA } from '@/components/sections/CTA';
 import { Footer } from '@/components/sections/Footer';
 import { LoadingScreen } from '@/components/sections/LoadingScreen';
@@ -37,10 +38,10 @@ export default function LandingPage() {
         {isLoading && <LoadingScreen key="loading" />}
       </AnimatePresence>
 
-      <main className={`selection:bg-brand-orange selection:text-white transition-opacity duration-1000 ${isLoading ? 'opacity-0 h-screen overflow-hidden' : 'opacity-100'}`}>
+      <main className={`selection:bg-brand-orange selection:text-white/80 transition-opacity duration-1000 ${isLoading ? 'opacity-0 h-screen overflow-hidden' : 'opacity-100'}`}>
         <Navbar />
         <Hero />
-      <Philosophy />
+        <Marquee />
       
       <Founder />
       <ToolsGrid />
@@ -51,11 +52,10 @@ export default function LandingPage() {
       <Comparison />
       <WhoIsThisFor />
       <ImageDivider src="/assets/ChatGPT Image Mar 28, 2026, 02_06_22 PM.png" />
-      <TrainingStructure />
+      <Reviews />
       <FAQ />
       <Gallery />
-      {/* <ImageDivider src="/assets/ChatGPT Image Mar 28, 2026, 03_29_43 PM.png" /> */}
-      <ImageDivider src="/assets/ChatGPT Image Mar 28, 2026, 06_17_05 PM.png" />
+      <BookSession />
       {/* <CTA /> */}
       <Footer />
       </main>

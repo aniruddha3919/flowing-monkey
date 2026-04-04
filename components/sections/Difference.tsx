@@ -11,7 +11,7 @@ export const Difference = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {siteConfig.difference.map((item, i) => (
             <div key={i} className="flex gap-6 p-8 bg-brand-card rounded-3xl border-l-4 border-brand-orange">
-              <div className="text-brand-orange shrink-0">
+              <div className="text-brand-orange/80 shrink-0">
                 {getIconComponent(item.iconName)}
               </div>
               <div>

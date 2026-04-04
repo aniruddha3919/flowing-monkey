@@ -14,7 +14,7 @@ export const Hero = () => {
     <section className="relative min-h-[100dvh] flex items-end pb-12 md:pb-0 md:items-center pt-20 overflow-hidden">
       {/* Background with Overlay */}
       {/* Interactive Grid Background */}
-      <div className="absolute inset-0 z-0 bg-[#0f0f12]">
+      {/* <div className="absolute inset-0 z-0 bg-[#0f0f12]">
         <ShapeGrid
           direction="diagonal"
           borderColor="rgba(255, 255, 255, 0.05)"
@@ -24,7 +24,7 @@ export const Hero = () => {
           speed={0.5}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent pointer-events-none" />
-      </div>
+      </div> */}
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 w-full">
@@ -36,12 +36,12 @@ export const Hero = () => {
             transition={{ duration: 0.8 }}
             className="w-full lg:w-1/2 order-last lg:order-first text-left z-10"
           >
-            <span className="text-brand-orange font-bold tracking-[0.2em] text-xs md:text-sm uppercase mb-6 block">
+            {/* <span className="text-brand-orange/80 font-bold tracking-[0.2em] text-xs md:text-sm uppercase mb-6 block">
               {siteConfig.hero.badge}
-            </span>
+            </span> */}
 
-            <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-6xl font-display font-bold leading-[1.1] md:leading-[0.9] mb-6 md:mb-12 max-w-4xl min-h-[80px] md:min-h-[150px]">
-              <span className="block mb-2 md:mb-4">Flowing monkey fitness :</span>
+            <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-display font-medium leading-[1.1] md:leading-[0.9] mb-6 md:mb-12 max-w-4xl min-h-[80px] md:min-h-[150px]">
+              <span className="block mb-2 md:mb-4 tracking-[0.1em]">Flowing Monkey Fitness :</span>
               <TypeAnimation
                 key={typingKey}
                 sequence={[
@@ -52,16 +52,26 @@ export const Hero = () => {
                 wrapper="span"
                 cursor={true}
                 repeat={0}
-                className="text-brand-orange block"
+                className="text-brand-orange/80 block"
               />
             </h1>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-start mt-4 lg:mt-0">
-              <a href="https://wa.me/919051292950" target="_blank" rel="noopener noreferrer" className="bg-brand-orange hover:bg-brand-orange/90 text-white px-10 py-4 rounded-2xl font-bold text-lg transition-all shadow-xl shadow-brand-orange/20 text-center">
-                Start Your Journey
+              <a 
+                href="https://wa.me/919051292950" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-brand-red hover:bg-brand-red/90 text-white/80 px-8 py-5 font-dm font-bold text-sm sm:text-base tracking-[0.15em] uppercase transition-all text-center min-w-[240px]"
+              >
+                BOOK A FREE CONSULT
               </a>
-              <a href="https://maps.app.goo.gl/xL3JYNpfFMedc47Q6" target="_blank" rel="noopener noreferrer" className="bg-white/5 hover:bg-white/10 border border-white/10 text-white px-10 py-4 rounded-2xl font-bold text-lg transition-all text-center">
-                Find in map
+              <a 
+                href="https://maps.app.goo.gl/xL3JYNpfFMedc47Q6" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-transparent hover:bg-white/5 border border-white/20 text-white/80 px-8 py-5 font-dm font-bold text-sm sm:text-base tracking-[0.15em] uppercase transition-all text-center min-w-[240px]"
+              >
+                EXPLORE TRAINING
               </a>
             </div>
           </motion.div>
