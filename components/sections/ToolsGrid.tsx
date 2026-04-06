@@ -31,7 +31,7 @@ export const ToolsGrid = () => {
   return (
     <section
       id="training-arsenal"
-      className="py-24 bg-brand-dark border-t border-white/5 relative overflow-hidden"
+      className="pt-12 pb-24 md:pt-16 bg-brand-dark border-t border-white/5 relative overflow-hidden"
     >
       {/* Background Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,102,0,0.05)_0%,transparent_70%)]" />

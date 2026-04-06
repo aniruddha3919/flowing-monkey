@@ -11,23 +11,11 @@ export const Hero = () => {
   const [typingKey, setTypingKey] = useState(0);
 
   return (
-    <section className="relative min-h-[100dvh] flex items-end pb-12 md:pb-0 md:items-center pt-20 overflow-hidden">
-      {/* Background with Overlay */}
-      {/* Interactive Grid Background */}
-      {/* <div className="absolute inset-0 z-0 bg-[#0f0f12]">
-        <ShapeGrid
-          direction="diagonal"
-          borderColor="rgba(255, 255, 255, 0.05)"
-          hoverFillColor="rgba(255, 102, 0, 0.15)"
-          squareSize={40}
-          shape="hexagon"
-          speed={0.5}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent pointer-events-none" />
-      </div> */}
+    <section className="relative min-h-[100dvh] flex items-center pt-24 pb-12 md:pb-0 md:pt-20 overflow-hidden">
+      
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 w-full">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-0 lg:gap-12 w-full">
 
           {/* Main Text Side */}
           <motion.div
@@ -36,25 +24,29 @@ export const Hero = () => {
             transition={{ duration: 0.8 }}
             className="w-full lg:w-1/2 order-last lg:order-first text-left z-10"
           >
-            {/* <span className="text-brand-orange/80 font-bold tracking-[0.2em] text-xs md:text-sm uppercase mb-6 block">
-              {siteConfig.hero.badge}
-            </span> */}
+            <span className="text-brand-orange/80 font-bold tracking-[0.2em] text-xs md:text-sm uppercase mb-6 block">
+              Build Strength. Move Better. Stay Pain-Free.
+            </span>
 
-            <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-display font-medium leading-[1.1] md:leading-[0.9] mb-6 md:mb-12 max-w-4xl min-h-[80px] md:min-h-[150px]">
-              <span className="block mb-2 md:mb-4 tracking-[0.1em]">Flowing Monkey Fitness :</span>
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-display font-medium leading-[1.1] md:leading-[0.9] mb-4 md:mb-6 max-w-4xl min-h-[80px] md:min-h-[150px]">
+              {/* <span className="block mb-2 md:mb-4 tracking-[0.1em]">Flowing Monkey Fitness :</span> */}
               <TypeAnimation
                 key={typingKey}
                 sequence={[
-                  'where strengths meets movement',
+                  'Movement-Based Strength Training in Kolkata',
                   2000,
                   () => setTypingKey(prev => prev + 1)
                 ]}
                 wrapper="span"
                 cursor={true}
                 repeat={0}
-                className="text-brand-orange/80 block"
+                className="text-white block"
               />
             </h1>
+
+            <p className="text-white/80 text-base md:text-lg lg:text-xl mb-8 md:mb-12 max-w-2xl leading-relaxed">
+              At Flowing Monkey Fitness, we combine strength training, Animal Flow, and unconventional tools like mace, gada, and Indian clubs to help you build a strong, mobile, and injury-free body.
+            </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-start mt-4 lg:mt-0">
               <a 
@@ -63,7 +55,7 @@ export const Hero = () => {
                 rel="noopener noreferrer" 
                 className="bg-brand-red hover:bg-brand-red/90 text-white/80 px-8 py-5 font-dm font-bold text-sm sm:text-base tracking-[0.15em] uppercase transition-all text-center min-w-[240px]"
               >
-                BOOK A FREE CONSULT
+                Contact on WhatsApp
               </a>
               <a 
                 href="https://maps.app.goo.gl/xL3JYNpfFMedc47Q6" 
@@ -81,13 +73,13 @@ export const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="w-full lg:w-1/2 order-first lg:order-last flex justify-center lg:justify-end translate-y-12 lg:translate-y-16 -mb-10 lg:-mb-16"
+            className="w-full lg:w-1/2 order-first lg:order-last flex justify-center lg:justify-end -mt-12 -mb-8 lg:mt-0 lg:mb-0"
           >
-            <div className="relative w-full max-w-[380px] lg:max-w-[700px] aspect-square pointer-events-none drop-shadow-[0_0_50px_rgba(255,102,0,0.15)] animate-pulse">
+            <div className="relative w-full max-w-[280px] lg:max-w-[480px] aspect-square pointer-events-none drop-shadow-[0_0_50px_rgba(255,102,0,0.15)] animate-pulse">
               <Image
                 src="/assets/hero-image.png"
                 fill
-                className="object-contain scale-[1.15] lg:scale-[1.3] origin-bottom"
+                className="object-contain scale-[1.05] lg:scale-[1.15] origin-bottom"
                 alt="Flowing Monkey Athlete"
                 priority
               />

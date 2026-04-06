@@ -14,7 +14,7 @@ const descriptions: Record<string, string> = {
 
 export const WhoIsThisFor = () => {
   return (
-    <section className="pt-20 pb-32 bg-brand-dark overflow-hidden relative">
+    <section className="pt-8 md:pt-20 pb-32 bg-brand-dark overflow-hidden relative">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-orange/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -28,7 +28,7 @@ export const WhoIsThisFor = () => {
             Who Is This For?
           </span>
           <h2 className="tracking-[0.1em] text-5xl md:text-7xl font-display font-bold mb-6 text-white/80">
-            Designed For <br/> Every Body
+           Who can Join
           </h2>
           <p className="text-white/50 max-w-2xl mx-auto text-lg leading-relaxed">
             Whether you are just starting your fitness journey or looking to take your athletic performance to the next level.

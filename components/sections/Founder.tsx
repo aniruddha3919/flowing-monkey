@@ -24,6 +24,18 @@ export const Founder = () => {
   return (
     <section id="meet-coach" className="pt-24 pb-24 bg-brand-card">
       <div className="max-w-7xl mx-auto px-6">
+        {/* Section Heading */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16 md:mb-24"
+        >
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold uppercase tracking-[0.1em] text-white/90 underline underline-offset-[12px] decoration-white/20">
+            About The <span className="text-brand-red">Coach</span>
+          </h2>
+        </motion.div>
 
         {/* Founder Details Section */}
         <div className="flex flex-col md:flex-row gap-16 items-center">
@@ -58,7 +70,7 @@ export const Founder = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex-1 text-center md:text-left"
           >
-            <span className="text-brand-orange/80 font-bold tracking-[0.2em] text-sm uppercase mb-4 block font-display">
+            <span className="text-brand-orange/80 font-bold tracking-[0.2em] text-xl uppercase mb-4 block font-display">
               {siteConfig.founder.badge}
             </span>
             <h2 className="text-5xl md:text-7xl font-display font-bold mb-6 text-white/80 leading-tight">

@@ -29,14 +29,14 @@ export const FAQ = () => {
             
             <div className="w-12 h-0.5 bg-brand-red mb-10" />
 
-            <div className="space-y-6 text-white/70 font-light text-sm md:text-base max-w-md mb-12 leading-relaxed">
+            {/* <div className="space-y-6 text-white/70 font-light text-sm md:text-base max-w-md mb-12 leading-relaxed">
               <p>
                 Have questions before taking the leap? Here are the most common ones we get from people curious about training at FMF.
               </p>
               <p>
                 If you don't see your question, reach out directly — Madhav is happy to answer before your first session.
               </p>
-            </div>
+            </div> */}
 
             <button className="bg-brand-red hover:bg-brand-red/90 text-white/80 font-bold text-xs tracking-widest uppercase px-8 py-4 transition-colors">
               Ask A Question

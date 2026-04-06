@@ -4,9 +4,11 @@ import React, { useState, useEffect } from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { Hero } from '@/components/sections/Hero';
 import { Marquee } from '@/components/sections/Marquee';
+import { About } from '@/components/sections/About';
 import { ToolsGrid } from '@/components/sections/ToolsGrid';
 import { Founder } from '@/components/sections/Founder';
-import { HowWeTrain } from '@/components/sections/HowWeTrain';
+import { Services } from '@/components/sections/Services';
+import { SessionDetails } from '@/components/sections/SessionDetails';
 import { Difference } from '@/components/sections/Difference';
 import { ImageDivider } from '@/components/sections/ImageDivider';
 import { Comparison } from '@/components/sections/Comparison';
@@ -43,13 +45,15 @@ export default function LandingPage() {
         <Hero />
         <Marquee />
       
+      <About />
       <Founder />
+      <Services />
       <ToolsGrid />
       
-      <HowWeTrain />
+      <SessionDetails />
       {/* <Difference /> */}
       <ImageDivider />
-      <Comparison />
+      {/* <Comparison /> */}
       <WhoIsThisFor />
       <ImageDivider src="/assets/ChatGPT Image Mar 28, 2026, 02_06_22 PM.png" />
       <Reviews />
