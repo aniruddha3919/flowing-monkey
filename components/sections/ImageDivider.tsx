@@ -4,14 +4,16 @@ import Image from 'next/image';
 interface ImageDividerProps {
   src?: string;
   alt?: string;
+  className?: string;
 }
 
 export function ImageDivider({
   src = "/assets/divider-image.png",
-  alt = "Divider Image"
+  alt = "Divider Image",
+  className = ""
 }: ImageDividerProps) {
   return (
-    <section className="w-full bg-brand-dark md:hidden">
+    <section className={`w-full bg-brand-dark relative z-10 ${className}`}>
       <Image
         src={src}
         alt={alt}

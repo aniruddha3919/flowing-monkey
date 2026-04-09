@@ -31,6 +31,12 @@ const reviews = [
   }
 ];
 
+const videoReviews = [
+  { id: 1, src: '/assets/review1.mp4' },
+  { id: 2, src: '/assets/review2.mp4' },
+  { id: 3, src: '/assets/review3.mp4' },
+];
+
 export const Reviews = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -47,7 +53,7 @@ export const Reviews = () => {
   };
 
   return (
-    <section id="reviews" className="pt-24 pb-24 bg-brand-dark">
+    <section id="reviews" className="pt-2 pb-24 bg-brand-dark">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Header */}
@@ -62,105 +68,54 @@ export const Reviews = () => {
             <div className="flex items-center gap-4 mb-6">
               <div className="w-8 h-px bg-brand-red opacity-80" />
               <span className="text-brand-red font-bold text-[10px] md:text-xs tracking-[0.3em] uppercase opacity-80">
-                What Clients Say
+                Testimonials
               </span>
             </div>
 
             <h2 className="text-6xl md:text-7xl lg:text-8xl font-display font-medium text-white mb-8 leading-[0.95] tracking-[0.02em] opacity-80">
-              CLIENT<br />REVIEWS
+              CLIENT<br />EXPERIENCE
             </h2>
             
-            <div className="w-12 h-0.5 bg-brand-red mb-10" />
-
-            <div className="flex items-center gap-3">
-              <div className="flex gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3.5 h-3.5 fill-brand-red text-brand-red opacity-80" />
-                ))}
-              </div>
-              <span className="text-white/60 text-sm font-light opacity-80">
-                5.0 on Google · Flowing Monkey Fitness, Kolkata
-              </span>
-            </div>
+            
           </div>
         </motion.div>
 
-        {/* Reviews Horizontal Slider */}
-        <div className="relative -mx-6 px-6 md:mx-0 md:px-0">
-          <div 
-            ref={scrollRef}
-            className="flex overflow-x-auto snap-x snap-mandatory bg-white/[0.02] border-t border-b border-white/5 scroll-smooth"
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-          >
-            {/* Inject CSS to hide scrollbar for webkit (Chrome, Safari) inline or globally, but inline style scrollbarWidth handles Firefox */}
-            <style dangerouslySetInnerHTML={{__html: `
-              .flex::-webkit-scrollbar { display: none; }
-            `}} />
-
-            {reviews.map((review, i) => (
-              <motion.div 
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
+        {/* Video Reviews Slider */}
+        <div className="mb-24 relative">
+          <div className="flex overflow-x-auto gap-4 md:gap-8 pb-8 snap-x snap-mandatory scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0 scroll-smooth">
+            {videoReviews.map((video, index) => (
+              <motion.div
+                key={video.id}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className={`w-[85vw] md:w-[450px] min-w-[85vw] md:min-w-[450px] shrink-0 snap-center p-6 md:p-12 border-white/5 flex flex-col justify-between ${
-                  i !== 0 ? 'border-l' : ''
-                }`}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="relative min-w-[280px] md:min-w-[380px] aspect-[9/16] bg-black/40 rounded-3xl overflow-hidden snap-center group border border-white/10 shadow-2xl h-[500px] md:h-[650px]"
               >
-                <div>
-                  <div className="flex gap-1 mb-6 md:mb-8">
-                    {[...Array(5)].map((_, index) => (
-                      <Star key={index} className="w-3.5 h-3.5 fill-brand-red text-brand-red opacity-80" />
-                    ))}
+                <video
+                  src={video.src}
+                  className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-all duration-500 scale-[1.01] group-hover:scale-105"
+                  controls
+                  playsInline
+                  preload="metadata"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity pointer-events-none" />
+                <div className="absolute bottom-6 left-6 right-6 pointer-events-none">
+                  <div className="flex items-center gap-2 mb-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse" />
+                    <span className="text-white/60 text-[10px] tracking-[0.2em] font-bold uppercase">Experience {index + 1}</span>
                   </div>
-                  
-                  <p className="text-white/80 italic font-light text-base md:text-lg leading-relaxed mb-10 md:mb-12 min-h-[160px] md:min-h-[180px]">
-                    {review.text}
-                  </p>
-                </div>
-                
-                <div className="flex items-center gap-4 border-t border-white/5 pt-6">
-                  <div className="w-12 h-12 rounded-full border border-brand-red/30 flex items-center justify-center text-brand-red text-sm font-bold shrink-0 opacity-80 bg-brand-red/5">
-                    {review.initials}
-                  </div>
-                  <div>
-                    <h4 className="tracking-[0.1em] text-white text-base font-bold opacity-90">{review.name}</h4>
-                    <div className="flex items-center gap-2 mt-1.5">
-                      <span className="bg-brand-red/10 border border-brand-red/20 text-brand-red text-[9px] font-bold px-1.5 py-0.5 rounded-sm tracking-widest uppercase opacity-90">
-                        Google
-                      </span>
-                      <span className="text-white/40 text-xs opacity-80">
-                        {review.time}
-                      </span>
-                    </div>
-                  </div>
+                  <h4 className="text-white font-display text-lg tracking-wide opacity-90">Client Testimonial</h4>
                 </div>
               </motion.div>
             ))}
           </div>
         </div>
 
-        {/* Navigation Arrows */}
-        <div className="flex justify-center md:justify-end gap-3 mt-8">
-          <button 
-            onClick={scrollLeft}
-            className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white/70 hover:text-white hover:border-brand-red hover:bg-brand-red/10 transition-all focus:outline-none"
-            aria-label="Previous review"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-          <button 
-            onClick={scrollRight}
-            className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white/70 hover:text-white hover:border-brand-red hover:bg-brand-red/10 transition-all focus:outline-none"
-            aria-label="Next review"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
-        </div>
+        
 
         {/* Footer Button */}
-        <div className="mt-16 flex justify-center">
+        <div className=" flex justify-center">
           <button className="border border-white/10 hover:border-brand-red transition-colors bg-brand-dark hover:bg-brand-red/5 text-white/80 font-bold text-[11px] md:text-sm tracking-[0.2em] uppercase px-8 py-5 opacity-80">
             See All Google Reviews
           </button>

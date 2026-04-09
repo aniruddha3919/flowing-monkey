@@ -14,7 +14,7 @@ const descriptions: Record<string, string> = {
 
 export const WhoIsThisFor = () => {
   return (
-    <section className="pt-8 md:pt-20 pb-32 bg-brand-dark overflow-hidden relative">
+    <section className="pt-2 md:pt-20 pb-4 md:pb-10 bg-brand-dark overflow-hidden relative">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-orange/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">

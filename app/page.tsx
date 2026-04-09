@@ -48,14 +48,15 @@ export default function LandingPage() {
       <About />
       <Founder />
       <Services />
+      <ImageDivider src="/assets/toolsuse.png" className="md:hidden mb-[-2px]" />
       <ToolsGrid />
       
       <SessionDetails />
       {/* <Difference /> */}
-      <ImageDivider />
+      <ImageDivider className="md:hidden" />
       {/* <Comparison /> */}
       <WhoIsThisFor />
-      <ImageDivider src="/assets/ChatGPT Image Mar 28, 2026, 02_06_22 PM.png" />
+      <ImageDivider src="/assets/client-experience.png" className="md:hidden -mt-40" />
       <Reviews />
       <FAQ />
       <Gallery />

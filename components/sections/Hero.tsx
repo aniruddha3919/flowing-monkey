@@ -11,7 +11,7 @@ export const Hero = () => {
   const [typingKey, setTypingKey] = useState(0);
 
   return (
-    <section className="relative min-h-[100dvh] flex items-center pt-24 pb-12 md:pb-0 md:pt-20 overflow-hidden">
+    <section className="mt-10 relative min-h-[100dvh] flex items-center pt-16 pb-12 md:pb-0 md:pt-20 overflow-hidden">
       
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6">
@@ -24,7 +24,7 @@ export const Hero = () => {
             transition={{ duration: 0.8 }}
             className="w-full lg:w-1/2 order-last lg:order-first text-left z-10"
           >
-            <span className="text-brand-orange/80 font-bold tracking-[0.2em] text-xs md:text-sm uppercase mb-6 block">
+            <span className="hidden md:block text-brand-orange/80 font-bold tracking-[0.2em] text-xs md:text-sm uppercase mb-6">
               Build Strength. Move Better. Stay Pain-Free.
             </span>
 
@@ -45,7 +45,7 @@ export const Hero = () => {
             </h1>
 
             <p className="text-white/80 text-base md:text-lg lg:text-xl mb-8 md:mb-12 max-w-2xl leading-relaxed">
-              At Flowing Monkey Fitness, we combine strength training, Animal Flow, and unconventional tools like mace, gada, and Indian clubs to help you build a strong, mobile, and injury-free body.
+              Flowing Monkey Fitness blends strength training, Animal Flow, and tools like mace, gada, and Indian clubs to build strength, mobility, and resilience.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-start mt-4 lg:mt-0">
@@ -73,7 +73,7 @@ export const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="w-full lg:w-1/2 order-first lg:order-last flex justify-center lg:justify-end -mt-12 -mb-8 lg:mt-0 lg:mb-0"
+            className="w-full lg:w-1/2 order-first lg:order-last flex justify-center lg:justify-end -mt-24 -mb-8 lg:mt-0 lg:mb-0"
           >
             <div className="relative w-full max-w-[280px] lg:max-w-[480px] aspect-square pointer-events-none drop-shadow-[0_0_50px_rgba(255,102,0,0.15)] animate-pulse">
               <Image
