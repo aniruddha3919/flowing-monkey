@@ -7,10 +7,11 @@ import { motion, AnimatePresence } from 'motion/react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const certificates = [
-  { id: 1, image: '/assets/certificates/1000007397%20-%20Madhav%20Halder.jpg' },
-  { id: 2, image: '/assets/certificates/Screenshot_2023-08-05-12-53-59-13_e2d5b3f32b79de1d45acd1fad96fbb0f-01%20-%20Madhav%20Halder.jpeg' },
-  { id: 3, image: '/assets/certificates/Screenshot_2025-01-30-13-33-46-37_f541918c7893c52dbd1ee5d319333948%20-%20Madhav%20Halder.jpg' },
-  { id: 4, image: '/assets/certificates/Screenshot_2025-11-25-17-29-22-97_40deb401b9ffe8e1df2f1cc5ba480b12%20-%20Madhav%20Halder.jpg' },
+  { id: 1, image: '/assets/certificates/1000007397%20-%20Madhav%20Halder.jpg', className: 'col-span-1 aspect-[4/3]', imageClassName: 'object-cover' },
+  { id: 2, image: '/assets/certificates/Screenshot_2023-08-05-12-53-59-13_e2d5b3f32b79de1d45acd1fad96fbb0f-01%20-%20Madhav%20Halder.jpeg', className: 'col-span-1 aspect-[4/3]', imageClassName: 'object-cover' },
+  { id: 5, image: '/assets/Animal%20flow.jpg', className: 'col-span-1 aspect-[4/3] bg-black/10', imageClassName: 'object-contain scale-[0.95]' },
+  { id: 3, image: '/assets/certificates/Screenshot_2025-01-30-13-33-46-37_f541918c7893c52dbd1ee5d319333948%20-%20Madhav%20Halder.jpg', className: 'col-span-1 aspect-[4/3]', imageClassName: 'object-cover' },
+  { id: 4, image: '/assets/certificates/Screenshot_2025-11-25-17-29-22-97_40deb401b9ffe8e1df2f1cc5ba480b12%20-%20Madhav%20Halder.jpg', className: 'col-span-1 aspect-[4/3]', imageClassName: 'object-cover' },
 ];
 
 export const Founder = () => {
@@ -33,7 +34,7 @@ export const Founder = () => {
           className="text-center mb-16 md:mb-24"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold uppercase tracking-[0.1em] text-white/90 underline underline-offset-[12px] decoration-white/20">
-            About The <span className="text-brand-red">Coach</span>
+            MEET OUR <span className="text-brand-red">FOUNDER</span>
           </h2>
         </motion.div>
 
@@ -70,9 +71,9 @@ export const Founder = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex-1 text-center md:text-left"
           >
-            <span className="text-brand-orange/80 font-bold tracking-[0.2em] text-xl uppercase mb-4 block font-display">
+            {/* <span className="text-brand-orange/80 font-bold tracking-[0.2em] text-xl uppercase mb-4 block font-display">
               {siteConfig.founder.badge}
-            </span>
+            </span> */}
             <h2 className="text-5xl md:text-7xl font-display font-bold mb-6 text-white/80 leading-tight">
               {siteConfig.founder.name}
             </h2>
@@ -111,19 +112,19 @@ export const Founder = () => {
         >
 
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 grid-flow-dense">
             {certificates.map((cert, i) => (
               <motion.div
                 key={i}
                 whileHover={{ scale: 1.02 }}
-                className="relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer border border-white/5 shadow-lg group"
+                className={`relative rounded-2xl overflow-hidden cursor-pointer border border-white/5 shadow-lg group ${cert.className}`}
                 onClick={() => openLightbox(i)}
               >
                 <Image
                   src={cert.image}
                   alt={`Certificate ${i + 1}`}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className={`${cert.imageClassName || 'object-cover'} transition-transform duration-500 group-hover:scale-105`}
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">

@@ -7,11 +7,11 @@ import { ChevronDown } from 'lucide-react';
 const services = [
   {
     title: "Strength Training",
-    description: "Build functional strength using barbells, dumbbells, and kettlebells."
+    description: "Build real-world strength, muscle, and resilience using barbells, dumbbells, and kettlebells."
   },
   {
     title: "Unconventional Training",
-    description: "Train with mace, gada, mugdar, and Indian clubs to develop rotational strength and joint stability."
+    description: "Develop rotational strength, joint stability, and athletic movement using mace, gada, mugdar, and Indian clubs."
   },
   {
     title: "Animal Flow",
@@ -22,8 +22,16 @@ const services = [
     description: "Address pain, posture issues, and movement limitations through structured corrective training."
   },
   {
-    title: "Weight Loss Training",
-    description: "Sustainable fat loss through strength, conditioning, and movement-based workouts."
+    title: "HANDSTAND TRAINING",
+    description: "Build balance, shoulder strength, and body control through structured handstand training."
+  },
+  {
+    title: "KIDS TRAINING",
+    description: "Develop coordination, mobility, strength, and confidence through fun, movement-based training."
+  },
+  {
+    title: "ATHLETIC PERFORMANCE TRAINING",
+    description: "Improve strength, mobility, power, and movement efficiency for better sports performance."
   }
 ];
 
@@ -35,7 +43,7 @@ export const Services = () => {
   };
 
   return (
-    <section className="pt-24 pb-2 md:pb-24 bg-[#0f0f12]">
+    <section className="pt-24 pb-16 md:pb-32 bg-[#0f0f12]">
       <div className="max-w-4xl mx-auto px-6">
         {/* Section Heading */}
         <motion.div

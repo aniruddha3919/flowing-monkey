@@ -48,7 +48,7 @@ export default function LandingPage() {
       <About />
       <Founder />
       <Services />
-      <ImageDivider src="/assets/toolsuse.png" className="md:hidden mb-[-2px]" />
+      {/* <ImageDivider src="/assets/toolsuse.png" className="md:hidden mb-[-2px]" /> */}
       <ToolsGrid />
       
       <SessionDetails />
@@ -56,7 +56,7 @@ export default function LandingPage() {
       <ImageDivider className="md:hidden" />
       {/* <Comparison /> */}
       <WhoIsThisFor />
-      <ImageDivider src="/assets/client-experience.png" className="md:hidden -mt-40" />
+      {/* <ImageDivider src="/assets/client-experience.png" className="md:hidden -mt-40" /> */}
       <Reviews />
       <FAQ />
       <Gallery />

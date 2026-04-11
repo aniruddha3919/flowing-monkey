@@ -29,6 +29,9 @@ export const SessionDetails = () => {
               className="absolute -bottom-3 left-0 h-1 md:h-1.5 bg-brand-red"
             />
           </h2>
+          <p className="mt-10 text-white/70 text-lg md:text-xl font-light tracking-wide max-w-2xl mx-auto">
+            A structured approach designed for consistent progress.
+          </p>
         </motion.div>
 
         {/* Content Details Grid */}
@@ -43,7 +46,7 @@ export const SessionDetails = () => {
           >
             <Clock className="w-12 h-12 text-brand-orange mb-6" />
             <h3 className="text-2xl font-display uppercase tracking-widest text-white mb-4">Duration</h3>
-            <p className="text-white/80 font-sans text-lg">Each session is exactly <strong className="text-white">60 minutes</strong> long.</p>
+            <p className="text-white/80 font-sans text-lg">Each session is 60 minutes,<strong className="text-white"> focused on structured </strong> and effective training.</p>
           </motion.div>
 
           {/* Card 2 */}
@@ -56,7 +59,7 @@ export const SessionDetails = () => {
           >
             <Users className="w-12 h-12 text-brand-orange mb-6" />
             <h3 className="text-2xl font-display uppercase tracking-widest text-white mb-4">Training Type</h3>
-            <p className="text-white/80 font-sans text-lg">Clients can choose between <strong className="text-white">One-on-one personal training</strong> or <strong className="text-white">Small group training</strong>.</p>
+            <p className="text-white/80 font-sans text-lg">Choose between <strong className="text-white"> one-on-one</strong> or <strong className="text-white">personal training or small group sessions based on your goals.</strong>.</p>
           </motion.div>
 
           {/* Card 3 */}
@@ -69,7 +72,7 @@ export const SessionDetails = () => {
           >
             <CalendarDays className="w-12 h-12 text-brand-orange mb-6" />
             <h3 className="text-2xl font-display uppercase tracking-widest text-white mb-4">Standard Plan</h3>
-            <p className="text-white/80 font-sans text-lg">Includes <strong className="text-white">3 sessions per week</strong> (12 sessions per month).</p>
+            <p className="text-white/80 font-sans text-lg">3 sessions per week <strong className="text-white">(12 sessions per month)</strong>for consistent progress and long-term results.</p>
           </motion.div>
 
           {/* Add-ons */}
@@ -83,11 +86,11 @@ export const SessionDetails = () => {
             <ul className="space-y-6">
               <li className="flex items-start gap-4">
                 <PlusCircle className="min-w-6 min-h-6 w-6 h-6 text-brand-orange shrink-0 mt-1" />
-                <span className="text-white/80 text-lg leading-relaxed">Additional sessions can be arranged based on individual goals.</span>
+                <span className="text-white/80 text-lg leading-relaxed">Additional sessions can be added based on individual goals and training needs.</span>
               </li>
               <li className="flex items-start gap-4">
                 <CheckCircle2 className="min-w-6 min-h-6 w-6 h-6 text-brand-orange shrink-0 mt-1" />
-                <span className="text-white/80 text-lg leading-relaxed">Session timings are fixed initially for consistency but can be adjusted later based on availability.</span>
+                <span className="text-white/80 text-lg leading-relaxed">Session timings are fixed initially for consistency and can be adjusted later based on availability.</span>
               </li>
             </ul>
           </motion.div>

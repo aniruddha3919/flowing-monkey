@@ -45,7 +45,7 @@ export const Hero = () => {
             </h1>
 
             <p className="text-white/80 text-base md:text-lg lg:text-xl mb-8 md:mb-12 max-w-2xl leading-relaxed">
-              Flowing Monkey Fitness blends strength training, Animal Flow, and tools like mace, gada, and Indian clubs to build strength, mobility, and resilience.
+             Build strength, improve mobility, and stay pain-free through movement-based training.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-start mt-4 lg:mt-0">
