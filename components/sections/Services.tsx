@@ -43,7 +43,7 @@ export const Services = () => {
   };
 
   return (
-    <section className="pt-24 pb-16 md:pb-32 bg-[#0f0f12]">
+    <section id="training" className="pt-24 pb-16 md:pb-32 bg-[#0f0f12]">
       <div className="max-w-4xl mx-auto px-6">
         {/* Section Heading */}
         <motion.div

@@ -6,7 +6,7 @@ import { Clock, Users, CalendarDays, PlusCircle, CheckCircle2 } from 'lucide-rea
 
 export const SessionDetails = () => {
   return (
-    <section className="py-24 bg-brand-card">
+    <section id="session" className="py-24 bg-brand-card">
       <div className="max-w-5xl mx-auto px-6">
         
         {/* Section Heading */}

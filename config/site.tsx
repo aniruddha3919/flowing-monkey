@@ -15,7 +15,7 @@ export const siteConfig = {
     instagram: "https://www.instagram.com/flowingmonkeyfitness/",
     
   },
-  navLinks: ['Home', 'Training Arsenal', 'Meet Coach'],
+  navLinks: ['Training', 'Tools', 'Meet Coach', 'Session'],
   
   hero: {
     badge: "Movement · Strength · Freedom",

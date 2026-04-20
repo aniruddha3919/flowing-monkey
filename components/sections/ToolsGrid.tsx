@@ -15,51 +15,48 @@ import {
   Info
 } from "lucide-react";
 import { AnimatePresence } from 'motion/react';
+import { image } from 'motion/react-client';
+import Image from 'next/image';
 
 const toolsList = [
-  { 
-    name: "BARBELLS & DUMBBELLS", 
-    image: "/assets/barbells-and-dumbbells-create-asthetic-product-pho.jpeg",
+  {
+    name: "BARBELLS & DUMBBELLS",
+    image: "/assets/dumbel&barbel.jpeg",
     description: "Foundational strength tools for progressive overload and muscle building."
   },
-  { 
-    name: "KETTLEBELLS", 
-    image: "/assets/kettlebells.jpeg",
+  {
+    name: "KETTLEBELLS",
+    image: "/assets/kettelbell.jpeg",
     description: "Offset-handle weights for ballistic movements and core stability training."
   },
-  { 
-    name: "STEEL MACEBELL",  
-    image: "/assets/macebell.png",
+  {
+    name: "STEEL MACEBELL",
+    image: "/assets/steelmacebel.jpeg",
     description: "Long-lever tools used for rotational power and shoulder resilience."
   },
-  { 
-    name: "GADA & MUGDAR", 
-    image: "/assets/generate-these-product-image.jpeg",
+  {
+    name: "GADA & MUGDAR",
+    image: "/assets/gada&mugdar.jpeg",
     description: "Traditional Indian tools for circular loading and functional grip strength."
   },
-  { 
-    name: "INDIAN CLUBS / JODI", 
-    image: "https://www.mudgarclub.com/cdn/shop/files/4_79f2c702-074b-4eca-82eb-fa7f56743ff7.jpg?v=1746190264&width=1301",
+  {
+    name: "INDIAN CLUBS",
+    image: "/assets/indianclubs.jpeg",
     description: "Rhythmic swinging tools for shoulder health and neurological coordination."
   },
-  { 
-    name: "PERSIAN MILL", 
-    image: "/assets/BMF_Persian_Meels_0788.jpg",
+  {
+    name: "PERSIAN MILL & JODI",
+    image: "/assets/persianmill.jpeg",
     description: "Ancient conditioning tools focused on heavy rotational strength and endurance."
   },
-  { 
-    name: "BODYWEIGHT TRAINING", 
-    icon: PersonStanding,
+  {
+    name: "BODYWEIGHT TRAINING",
+    image: "/assets/bodyweighttrain.jpeg",
     description: "Mastering movement through Animal Flow, locomotion, and body control."
   },
-  { 
-    name: "PULL-UP BARS & DRILLS", 
-    icon: Grip,
-    description: "Suspension training and hanging drills to build raw pulling power."
-  },
-  { 
-    name: "MOBILITY TOOLS", 
-    icon: HeartPulse,
+  {
+    name: "MOBILITY TOOLS",
+    image: "/assets/mobilitytools.jpeg",
     description: "Bands and rollers used to fix imbalances and maintain a pain-free body."
   }
 ];
@@ -69,14 +66,14 @@ export const ToolsGrid = () => {
 
   return (
     <section
-      id="training-arsenal"
+      id="our-arsenal"
       className="pt-16 pb-24 md:pt-24 bg-brand-dark relative overflow-hidden"
     >
       {/* Background Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,102,0,0.05)_0%,transparent_70%)]" />
 
       <div className="max-w-4xl mx-auto px-6 relative z-10">
-        
+
         {/* Heading */}
         <div className="text-center mb-16">
           <span className="text-left text-brand-orange/80 font-bold tracking-[0.2em] text-xl uppercase mb-4 block font-display">
@@ -93,7 +90,7 @@ export const ToolsGrid = () => {
         </div>
 
         {/* Tools List */}
-        <div className="flex flex-col gap-2">
+        <div id="tools" className="flex flex-col gap-2">
           {toolsList.map((tool, index) => {
             const isExpanded = expandedIndex === index;
             return (
@@ -113,18 +110,17 @@ export const ToolsGrid = () => {
                 <div className="flex items-center gap-6">
                   {/* Icon Box */}
                   <div className="w-16 h-16 shrink-0 bg-[#2b1010] border border-[#3d1a1a] rounded-xl flex items-center justify-center relative overflow-hidden">
-                    
+
                     {/* Glow Effect */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-gradient-to-br from-orange-500/10 to-transparent" />
 
-                    {/* Icon or Image */}
-                    {tool.icon ? (
-                      <tool.icon className="w-8 h-8 text-brand-orange/80 group-hover:scale-110 group-hover:text-orange-400 transition-all duration-300 z-10" />
-                    ) : tool.image && (
-                      <img 
-                        src={tool.image} 
-                        alt={tool.name} 
-                        className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300 z-10"
+                    {/* Image */}
+                    {tool.image && (
+                      <Image
+                        src={tool.image}
+                        alt={tool.name}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-all duration-500 z-10"
                       />
                     )}
                   </div>
@@ -157,7 +153,7 @@ export const ToolsGrid = () => {
                         <p className="text-white/70 text-base md:text-lg leading-relaxed font-light italic">
                           {tool.description}
                         </p>
-                        
+
                       </div>
                     </motion.div>
                   )}

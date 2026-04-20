@@ -114,11 +114,21 @@ export const Reviews = () => {
 
         
 
-        {/* Footer Button */}
-        <div className=" flex justify-center">
-          <button className="border border-white/10 hover:border-brand-red transition-colors bg-brand-dark hover:bg-brand-red/5 text-white/80 font-bold text-[11px] md:text-sm tracking-[0.2em] uppercase px-8 py-5 opacity-80">
-            See All Google Reviews
-          </button>
+        {/* Footer Button - Styled like Instagram button in footer */}
+        <div className="flex justify-center">
+          <a
+            href="https://g.co/kgs/2fS8K9z"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-tr from-[#4285F4] via-[#EA4335] to-[#FBBC05] p-[2px] transition-all duration-300 hover:scale-[1.05] hover:shadow-[0_0_30px_rgba(66,133,244,0.3)]"
+          >
+            <div className="flex items-center justify-center gap-3 bg-brand-dark group-hover:bg-black/20 rounded-[10px] px-10 py-5 transition-all duration-300">
+              <Star size={18} className="text-white/80 group-hover:text-white transition-colors fill-brand-orange border-none" />
+              <span className="font-bold text-sm  uppercase text-white/80 group-hover:text-white transition-colors">
+                See our Google Reviews
+              </span>
+            </div>
+          </a>
         </div>
 
       </div>

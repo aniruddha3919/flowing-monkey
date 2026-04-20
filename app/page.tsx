@@ -17,6 +17,7 @@ import { Reviews } from '@/components/sections/Reviews';
 import { FAQ } from '@/components/sections/FAQ';
 import { Gallery } from '@/components/sections/Gallery';
 import { BookSession } from '@/components/sections/BookSession';
+import { Team } from '@/components/sections/Team';
 import { CTA } from '@/components/sections/CTA';
 import { Footer } from '@/components/sections/Footer';
 import { LoadingScreen } from '@/components/sections/LoadingScreen';
@@ -61,6 +62,7 @@ export default function LandingPage() {
       <FAQ />
       <Gallery />
       <BookSession />
+      <Team />
       {/* <CTA /> */}
       <Footer />
       </main>
