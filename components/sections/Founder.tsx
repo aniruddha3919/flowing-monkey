@@ -9,9 +9,9 @@ import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 const certificates = [
   { id: 1, image: '/assets/certificates/1000007397%20-%20Madhav%20Halder.jpg', className: 'col-span-1 aspect-[4/3]', imageClassName: 'object-cover' },
   { id: 2, image: '/assets/certificates/Screenshot_2023-08-05-12-53-59-13_e2d5b3f32b79de1d45acd1fad96fbb0f-01%20-%20Madhav%20Halder.jpeg', className: 'col-span-1 aspect-[4/3]', imageClassName: 'object-cover' },
-  { id: 5, image: '/assets/Animal%20flow.jpg', className: 'col-span-1 aspect-[4/3] bg-black/10', imageClassName: 'object-contain scale-[0.95]' },
   { id: 3, image: '/assets/certificates/Screenshot_2025-01-30-13-33-46-37_f541918c7893c52dbd1ee5d319333948%20-%20Madhav%20Halder.jpg', className: 'col-span-1 aspect-[4/3]', imageClassName: 'object-cover' },
   { id: 4, image: '/assets/certificates/Screenshot_2025-11-25-17-29-22-97_40deb401b9ffe8e1df2f1cc5ba480b12%20-%20Madhav%20Halder.jpg', className: 'col-span-1 aspect-[4/3]', imageClassName: 'object-cover' },
+  { id: 5, image: '/assets/Animal%20flow.jpg', className: 'col-span-2 md:col-span-1 w-[50%] mx-auto md:w-auto md:mx-0 aspect-[4/3] bg-black/10', imageClassName: 'object-contain scale-[0.9]' },
 ];
 
 export const Founder = () => {
