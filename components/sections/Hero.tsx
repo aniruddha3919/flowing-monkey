@@ -58,9 +58,7 @@ export const Hero = () => {
                 Contact on WhatsApp
               </a>
               <a 
-                href="https://maps.app.goo.gl/xL3JYNpfFMedc47Q6" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+                href="#training" 
                 className="bg-transparent hover:bg-white/5 border border-white/20 text-white/80 px-8 py-5 font-dm font-bold text-sm sm:text-base tracking-[0.15em] uppercase transition-all text-center min-w-[240px]"
               >
                 EXPLORE TRAINING

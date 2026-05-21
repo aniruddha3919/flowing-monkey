@@ -1,4 +1,4 @@
-import { 
+import {
   Dumbbell, Users, History, Brain, Trophy, Zap
 } from 'lucide-react';
 import React from 'react';
@@ -13,10 +13,10 @@ export const siteConfig = {
   },
   social: {
     instagram: "https://www.instagram.com/flowingmonkeyfitness/",
-    
+
   },
   navLinks: ['Training', 'Tools', 'Meet Coach', 'Session'],
-  
+
   hero: {
     badge: "Movement · Strength · Freedom",
     titleLine1: "Where Strength",
@@ -45,9 +45,9 @@ export const siteConfig = {
   ],
 
   founder: {
-    
+
     name: "Madhav Halder",
-    description: "Madhav Halder is the founder and head coach of Flowing Monkey Fitness. He is a movement-based strength coach specializing in unconventional training methods, corrective exercise, and functional strength development. With a strong athletic background, Madhav was a district-level swimmer and water polo player and a national gold medalist in rowing. His experience in competitive sports shapes his practical and performance-driven training approach. Certifications:",
+    description: "Madhav Halder is the founder and head coach of Flowing Monkey Fitness. He is a movement-based strength coach specializing in unconventional training methods, corrective exercise, and functional strength development. With a strong athletic background, Madhav was a district-level swimmer and water polo player and a national gold medalist in rowing. His experience in competitive sports shapes his practical and performance-driven training approach.",
     stats: [
       { value: "250+", label: "Clients" },
       { value: "5+", label: "Certifications" }
@@ -82,21 +82,21 @@ export const siteConfig = {
   ],
 
   faqs: [
-    { 
-      q: 'Do I need prior fitness experience to join?', 
-      a: 'No. Beginners are absolutely welcome. Every program at Flowing Monkey Fitness is designed according to the individual’s fitness level, movement ability, and goals.' 
+    {
+      q: 'Do I need prior fitness experience to join?',
+      a: 'No. Beginners are absolutely welcome. Every program at Flowing Monkey Fitness is designed according to the individual’s fitness level, movement ability, and goals.'
     },
-    { 
-      q: 'Can this training help with weight loss?', 
-      a: 'Yes. The training approach combines strength training, movement training, and conditioning, which helps improve metabolism, burn fat, and build lean muscle. Programs are designed to support sustainable weight loss while also improving strength, mobility, and overall health.' 
+    {
+      q: 'Can this training help with weight loss?',
+      a: 'Yes. The training approach combines strength training, movement training, and conditioning, which helps improve metabolism, burn fat, and build lean muscle. Programs are designed to support sustainable weight loss while also improving strength, mobility, and overall health.'
     },
-    { 
-      q: 'Is this training safe for people with pain or injuries?', 
-      a: 'Yes. Corrective exercise and movement assessment are part of the process. Training programs are designed to improve mobility, reduce pain, and strengthen the body safely.' 
+    {
+      q: 'Is this training safe for people with pain or injuries?',
+      a: 'Yes. Corrective exercise and movement assessment are part of the process. Training programs are designed to improve mobility, reduce pain, and strengthen the body safely.'
     },
-    { 
-      q: 'Can children train at Flowing Monkey Fitness?', 
-      a: 'Yes. Children can benefit greatly from movement-based training. Sessions for kids focus on developing coordination, balance, mobility, strength, and body awareness through fun and engaging movements.' 
+    {
+      q: 'Can children train at Flowing Monkey Fitness?',
+      a: 'Yes. Children can benefit greatly from movement-based training. Sessions for kids focus on developing coordination, balance, mobility, strength, and body awareness through fun and engaging movements.'
     },
   ],
 

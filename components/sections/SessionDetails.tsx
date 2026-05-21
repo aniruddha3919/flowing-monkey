@@ -8,7 +8,7 @@ export const SessionDetails = () => {
   return (
     <section id="session" className="py-24 bg-brand-card">
       <div className="max-w-5xl mx-auto px-6">
-        
+
         {/* Section Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,7 @@ export const SessionDetails = () => {
         {/* Content Details Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-12">
           {/* Card 1 */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -50,7 +50,7 @@ export const SessionDetails = () => {
           </motion.div>
 
           {/* Card 2 */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -59,11 +59,11 @@ export const SessionDetails = () => {
           >
             <Users className="w-12 h-12 text-brand-orange mb-6" />
             <h3 className="text-2xl font-display uppercase tracking-widest text-white mb-4">Training Type</h3>
-            <p className="text-white/80 font-sans text-lg">Choose between <strong className="text-white"> one-on-one</strong> or <strong className="text-white">personal training or small group sessions based on your goals.</strong>.</p>
+            <p className="text-white/80 font-sans text-lg">Choose between <strong className="text-white"> one-on-one</strong> or <strong className="text-white">small group sessions based on your goals.</strong>.</p>
           </motion.div>
 
           {/* Card 3 */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -76,7 +76,7 @@ export const SessionDetails = () => {
           </motion.div>
 
           {/* Add-ons */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -97,17 +97,17 @@ export const SessionDetails = () => {
         </div>
 
         {/* CTA Button */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
           className="flex justify-center mt-16"
         >
-          <a 
-            href="https://wa.me/919051292950" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://wa.me/919051292950"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-brand-red hover:bg-brand-red/90 text-white px-10 py-5 font-dm font-bold text-sm sm:text-base tracking-[0.15em] uppercase transition-all shadow-lg text-center"
           >
             Book a session

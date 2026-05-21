@@ -17,18 +17,18 @@ export const WhoIsThisFor = () => {
     <section className="pt-2 md:pt-20 pb-4 md:pb-10 bg-brand-dark overflow-hidden relative">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-orange/5 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="mt-20 max-w-7xl mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <span className="text-brand-orange/80 font-bold tracking-[0.2em] text-sm uppercase mb-4 block">
+          <span className=" text-brand-orange/80 font-bold tracking-[0.2em] text-sm uppercase mb-4 block">
             Who Is This For?
           </span>
           <h2 className="tracking-[0.1em] text-5xl md:text-7xl font-display font-bold mb-6 text-white/80">
-           Who can Join
+            Who can Join
           </h2>
           <p className="text-white/50 max-w-2xl mx-auto text-lg leading-relaxed">
             Whether you are just starting your fitness journey or looking to take your athletic performance to the next level.
@@ -47,7 +47,7 @@ export const WhoIsThisFor = () => {
             >
               {/* Red Square Bullet */}
               <div className="w-1.5 h-1.5 bg-brand-red shrink-0 mt-2.5" />
-              
+
               <div className="flex-1">
                 <h3 className="text-white/80 font-display font-bold uppercase tracking-widest text-xl mb-4 group-hover:text-brand-orange/80 transition-colors">
                   {tag}

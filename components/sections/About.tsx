@@ -31,11 +31,11 @@ export const About = () => {
         >
           {/* Subtle top border accent */}
           <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-brand-orange to-transparent opacity-50" />
-          
+
           <h2 className="text-brand-orange font-bold font-display text-center uppercase tracking-[0.15em] mb-6 text-xl md:text-2xl">
             About Flowing Monkey Fitness
           </h2>
-          
+
           <p className="text-white/80 text-base md:text-lg lg:text-xl font-sans leading-relaxed md:leading-loose text-justify">
             Flowing Monkey Fitness is a movement-focused training studio designed to help people become stronger, more mobile, and pain-free. Unlike traditional gyms that focus on machines and isolated exercises, we train the body as a complete system using natural human movement patterns such as squatting, hinging, pushing, pulling, rotating, and locomotion. The goal is simple — build a body that is strong, mobile, and capable in real life.
           </p>
@@ -50,7 +50,7 @@ export const About = () => {
           className="mt-16 md:mt-24 text-center"
         >
           <p className="text-left text-white text-lg md:text-2xl lg:text-3xl font-display leading-[1.4] md:leading-[1.5] px-4 md:px-12 tracking-wide">
-            Our approach combines modern strength training with traditional tools and movement systems to <span className="text-brand-orange">Strength. Mobility. Coordination. Real-world performance.</span> and overall physical performance.
+            Our approach combines modern strength training with traditional tools and movement systems to <span className="text-brand-orange">Strength, Mobility, Coordination, Real-world performance</span> and overall physical performance.
           </p>
         </motion.div>
       </div>
