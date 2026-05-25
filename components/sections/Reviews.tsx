@@ -72,8 +72,8 @@ export const Reviews = () => {
         </motion.div>
 
         {/* Video Reviews Grid */}
-        <div className="mb-24">
-          <div className="grid grid-cols-2 gap-4 md:gap-8">
+        <div className="mb-24 max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
             {videoReviews.map((video, index) => (
               <motion.div
                 key={video.id}
@@ -96,7 +96,7 @@ export const Reviews = () => {
                     <div className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse" />
                     <span className="text-white/60 text-[9px] md:text-[11px] tracking-[0.15em] md:tracking-[0.2em] font-bold uppercase">Experience {index + 1}</span>
                   </div>
-                  <h4 className="text-white font-display text-sm md:text-xl tracking-wide opacity-90">Client Testimonial</h4>
+                  <h4 className="text-white font-display text-sm md:text-lg tracking-wide opacity-90">Client Testimonial</h4>
                 </div>
               </motion.div>
             ))}

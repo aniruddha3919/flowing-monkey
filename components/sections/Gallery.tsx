@@ -11,7 +11,7 @@ const trainingVideos = [
 
 export const Gallery = () => {
   return (
-    <section id="gallery" className="pt-12 pb-24 bg-brand-dark overflow-hidden mt-5">
+    <section id="gallery" className="pt-12 pb-6 bg-brand-dark overflow-hidden mt-5">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Section Header */}
@@ -43,7 +43,7 @@ export const Gallery = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="relative min-w-[280px] md:min-w-[380px] aspect-[9/16] bg-black/40 rounded-3xl overflow-hidden snap-center group border border-white/10 shadow-2xl h-[500px] md:h-[650px]"
+                 className="relative min-w-[180px] md:min-w-[300px] aspect-[9/16] bg-black/40 rounded-2xl md:rounded-3xl overflow-hidden snap-center group border border-white/10 shadow-2xl"
               >
                 <video
                   src={video.src}
@@ -55,12 +55,12 @@ export const Gallery = () => {
                   preload="metadata"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity pointer-events-none" />
-                <div className="absolute bottom-6 left-6 right-6 pointer-events-none">
-                  <div className="flex items-center gap-2 mb-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
-                    <span className="text-white/60 text-[10px] tracking-[0.2em] font-bold uppercase">Training Clip {index + 1}</span>
+                <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 pointer-events-none">
+                  <div className="flex items-center gap-1.5 md:gap-2 mb-1.5 md:mb-2">
+                    <div className="w-1 md:w-1.5 h-1 md:h-1.5 rounded-full bg-brand-orange animate-pulse" />
+                    <span className="text-white/60 text-[8px] md:text-[10px] tracking-[0.15em] md:tracking-[0.2em] font-bold uppercase">Training Clip {index + 1}</span>
                   </div>
-                  <h4 className="text-white font-display text-lg tracking-wide opacity-90">{video.title}</h4>
+                  <h4 className="text-white font-display text-xs md:text-lg tracking-wide opacity-90">{video.title}</h4>
                 </div>
               </motion.div>
             ))}
