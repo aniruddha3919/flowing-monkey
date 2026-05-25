@@ -1,8 +1,8 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React from 'react';
 import { motion } from 'motion/react';
-import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Star } from 'lucide-react';
 
 const reviews = [
   {
@@ -35,29 +35,20 @@ const videoReviews = [
   { id: 1, src: '/assets/review1.mp4' },
   { id: 2, src: '/assets/review2.mp4' },
   { id: 3, src: '/assets/review3.mp4' },
+  { id: 4, src: '/assets/review4.mp4' },
+  { id: 5, src: '/assets/review5.mp4' },
+  { id: 6, src: '/assets/review6.mp4' },
+  { id: 7, src: '/assets/review7.mp4' },
+  { id: 8, src: '/assets/review8.mp4' },
 ];
 
 export const Reviews = () => {
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  const scrollLeft = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: -350, behavior: 'smooth' });
-    }
-  };
-
-  const scrollRight = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: 350, behavior: 'smooth' });
-    }
-  };
-
   return (
     <section id="reviews" className="pt-2 pb-24 bg-brand-dark">
       <div className="max-w-7xl mx-auto px-6">
-        
+
         {/* Header */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -75,14 +66,14 @@ export const Reviews = () => {
             <h2 className="text-6xl md:text-7xl lg:text-8xl font-display font-medium text-white mb-8 leading-[0.95] tracking-[0.02em] opacity-80">
               CLIENT<br />EXPERIENCE
             </h2>
-            
-            
+
+
           </div>
         </motion.div>
 
-        {/* Video Reviews Slider */}
-        <div className="mb-24 relative">
-          <div className="flex overflow-x-auto gap-4 md:gap-8 pb-8 snap-x snap-mandatory scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0 scroll-smooth">
+        {/* Video Reviews Grid */}
+        <div className="mb-24">
+          <div className="grid grid-cols-2 gap-4 md:gap-8">
             {videoReviews.map((video, index) => (
               <motion.div
                 key={video.id}
@@ -90,7 +81,7 @@ export const Reviews = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="relative min-w-[280px] md:min-w-[380px] aspect-[9/16] bg-black/40 rounded-3xl overflow-hidden snap-center group border border-white/10 shadow-2xl h-[500px] md:h-[650px]"
+                className="relative aspect-[9/16] bg-black/40 rounded-2xl md:rounded-3xl overflow-hidden group border border-white/10 shadow-2xl w-full"
               >
                 <video
                   src={video.src}
@@ -100,19 +91,19 @@ export const Reviews = () => {
                   preload="metadata"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity pointer-events-none" />
-                <div className="absolute bottom-6 left-6 right-6 pointer-events-none">
-                  <div className="flex items-center gap-2 mb-2">
+                <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 pointer-events-none">
+                  <div className="flex items-center gap-1.5 md:gap-2 mb-1.5 md:mb-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse" />
-                    <span className="text-white/60 text-[10px] tracking-[0.2em] font-bold uppercase">Experience {index + 1}</span>
+                    <span className="text-white/60 text-[9px] md:text-[11px] tracking-[0.15em] md:tracking-[0.2em] font-bold uppercase">Experience {index + 1}</span>
                   </div>
-                  <h4 className="text-white font-display text-lg tracking-wide opacity-90">Client Testimonial</h4>
+                  <h4 className="text-white font-display text-sm md:text-xl tracking-wide opacity-90">Client Testimonial</h4>
                 </div>
               </motion.div>
             ))}
           </div>
         </div>
 
-        
+
 
         {/* Footer Button - Styled like Instagram button in footer */}
         <div className="flex justify-center">
