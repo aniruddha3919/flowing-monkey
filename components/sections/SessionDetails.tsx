@@ -72,7 +72,7 @@ export const SessionDetails = () => {
           >
             <CalendarDays className="w-12 h-12 text-brand-orange mb-6" />
             <h3 className="text-2xl font-display uppercase tracking-widest text-white mb-4">Standard Plan</h3>
-            <p className="text-white/80 font-sans text-lg">3 sessions per week <strong className="text-white">(12 sessions per month)</strong>for consistent progress and long-term results.</p>
+            <p className="text-white/80 font-sans text-lg">3 sessions per week <strong className="text-white">(12 sessions per month) </strong>for consistent progress and long-term results.</p>
           </motion.div>
 
           {/* Add-ons */}

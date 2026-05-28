@@ -78,7 +78,7 @@ export const Founder = () => {
               {siteConfig.founder.name}
             </h2>
             <div className="flex justify-center w-full">
-              <p className="text-white/70 text-lg md:text-xl leading-relaxed mb-10 font-light text-justify">
+              <p className="text-white/70 text-lg md:text-xl leading-relaxed mb-10 font-light text-left md:text-left">
                 {siteConfig.founder.description}
               </p>
 

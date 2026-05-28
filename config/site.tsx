@@ -47,7 +47,7 @@ export const siteConfig = {
   founder: {
 
     name: "Madhav Halder",
-    description: "Madhav Halder is the founder and head coach of Flowing Monkey Fitness. He is a movement-based strength coach specializing in unconventional training methods, corrective exercise, and functional strength development. With a strong athletic background, Madhav was a district-level swimmer and water polo player and a national gold medalist in rowing. His experience in competitive sports shapes his practical and performance-driven training approach.",
+    description: "Madhav Halder is the founder and head coach of Flowing Monkey Fitness. He is a movement-based strength coach specializing in unconventional training methods, corrective exercise, and functional strength development. Madhav has a strong athletic background, he was a district-level swimmer and water polo player and a national gold medallist in rowing. His experience in competitive sports shapes his practical and performance-driven training approach.",
     stats: [
       { value: "250+", label: "Clients" },
       { value: "5+", label: "Certifications" }
