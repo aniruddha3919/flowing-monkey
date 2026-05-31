@@ -59,7 +59,7 @@ export const SessionDetails = () => {
           >
             <Users className="w-12 h-12 text-brand-orange mb-6" />
             <h3 className="text-2xl font-display uppercase tracking-widest text-white mb-4">Training Type</h3>
-            <p className="text-white/80 font-sans text-lg">Choose between <strong className="text-white"> one-on-one</strong> or <strong className="text-white">small group sessions based on your goals.</strong>.</p>
+            <p className="text-white/80 font-sans text-lg">Choose between <strong className="text-white"> one-on-one</strong> or <strong className="text-white">small group sessions based on your goals.</strong></p>
           </motion.div>
 
           {/* Card 3 */}

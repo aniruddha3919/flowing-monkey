@@ -50,7 +50,7 @@ export const About = () => {
           className="mt-16 md:mt-24 text-center"
         >
           <p className="text-left text-white text-lg md:text-2xl lg:text-3xl font-display leading-[1.4] md:leading-[1.5] px-4 md:px-12 tracking-wide">
-            Our approach combines modern strength training with traditional tools and movement systems to <span className="text-brand-orange">Strength, Mobility, Coordination, Real-world performance</span> and overall physical performance.
+            Our approach combines modern strength training with traditional tools and movement systems to improve <span className="text-brand-orange">Strength, Mobility, Coordination, Real-world performance</span> and overall physical performance.
           </p>
         </motion.div>
       </div>

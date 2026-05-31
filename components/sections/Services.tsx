@@ -10,8 +10,16 @@ const services = [
     description: "Build real-world strength, muscle, and resilience using barbells, dumbbells, and kettlebells."
   },
   {
+    title: "WEIGHT LOSS PROGRAM",
+    description: "Lose body fat and improve fitness through strength training, conditioning, and sustainable lifestyle habits."
+  },
+  {
     title: "Unconventional Training",
     description: "Develop rotational strength, joint stability, and athletic movement using mace, gada, mugdar, and Indian clubs."
+  },
+  {
+    title: "ATHLETIC PERFORMANCE TRAINING",
+    description: "Improve strength, mobility, power, and movement efficiency for better athletic performance."
   },
   {
     title: "Animal Flow",
@@ -25,14 +33,13 @@ const services = [
     title: "HANDSTAND TRAINING",
     description: "Build balance, shoulder strength, and body control through structured handstand training."
   },
+
   {
     title: "KIDS TRAINING",
     description: "Develop coordination, mobility, strength, and confidence through fun, movement-based training."
   },
-  {
-    title: "ATHLETIC PERFORMANCE TRAINING",
-    description: "Improve strength, mobility, power, and movement efficiency for better sports performance."
-  }
+
+
 ];
 
 export const Services = () => {
@@ -69,8 +76,8 @@ export const Services = () => {
           {services.map((service, index) => {
             const isOpen = openIndex === index;
             return (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="border-b border-white/20"
               >
                 <button
@@ -88,7 +95,7 @@ export const Services = () => {
                     <ChevronDown className="w-8 h-8 md:w-10 md:h-10" />
                   </motion.div>
                 </button>
-                
+
                 <AnimatePresence initial={false}>
                   {isOpen && (
                     <motion.div
