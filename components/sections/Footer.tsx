@@ -9,20 +9,33 @@ export const Footer = () => {
   return (
     <footer className="bg-brand-dark pt-24 pb-12 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-8">
-          <div className="w-full md:max-w-sm">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-12 mb-12">
+          {/* Logo & Description */}
+          <div className="w-full lg:max-w-xs">
             <Link href="/" className="flex items-center gap-2 mb-6">
               <div className="bg-brand-orange p-1.5 rounded-lg">
                 <Dumbbell className="w-6 h-6 text-white/80" />
               </div>
               <span className="tracking-[0.1em] text-xl font-display font-bold">{siteConfig.name}</span>
             </Link>
-            <p className="text-white/50 text-sm leading-relaxed">
+            <p className="text-white/50 text-sm leading-relaxed font-sans">
               {siteConfig.description}
             </p>
           </div>
 
-          <div className="flex flex-col w-full md:max-w-md md:ml-auto">
+          {/* Local SEO Target Locations Section */}
+          <div className="w-full lg:max-w-xl">
+            <h4 className="font-bold uppercase tracking-widest text-xs mb-6 text-white/50">Training Areas & Specialties</h4>
+            <p className="text-white/50 text-sm leading-relaxed mb-4 font-sans">
+              Flowing Monkey Fitness Studio is South Kolkata's premier unconventional movement gym. Centrally located in Kalighat, we are the primary movement training destination for individuals looking for group or personal training near <strong className="text-white">Bhawanipur</strong>, <strong className="text-white">Southern Avenue</strong>, <strong className="text-white">Ballygunge</strong>, and <strong className="text-white">New Alipore</strong>.
+            </p>
+            <p className="text-white/40 text-xs leading-relaxed font-sans">
+              Our training programs focus on building functional strength and mobility through specialized tools and methodologies, including traditional steel maces (gada), Persian jodi, kettlebells, clubbells, animal flow, and corrective exercise routines designed to eliminate joint pain and elevate athletic performance.
+            </p>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex flex-col w-full lg:max-w-xs lg:ml-auto">
             <h4 className="font-bold uppercase tracking-widest text-xs mb-6 text-white/50">Follow Us</h4>
             <Link 
               href={siteConfig.social.instagram} 
